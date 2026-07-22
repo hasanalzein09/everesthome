@@ -1,26 +1,166 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f3ec;
+  --foreground: #221b14;
+  --accent: #a85b38;
+  --accent-light: #c07a52;
+  --accent-dark: #7e4226;
+  --muted: #efe7da;
+  --card: #fdfaf5;
+  --forest: #2e4034;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-accent-dark: var(--accent-dark);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-forest: var(--forest);
+  --font-sans: var(--font-cairo);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: rgba(168, 91, 56, 0.25);
+}
+
+/* ---- 2026 warm-minimal texture layer ---- */
+.texture-grain {
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(168, 91, 56, 0.08) 0, transparent 45%),
+    radial-gradient(circle at 85% 10%, rgba(46, 64, 52, 0.07) 0, transparent 40%),
+    radial-gradient(circle at 70% 90%, rgba(168, 91, 56, 0.06) 0, transparent 45%);
+}
+
+/* ---- Scroll reveal (scroll-triggered animations) ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ---- Micro-interactions ---- */
+.card-lift {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card-lift:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 24px 48px -16px rgba(34, 27, 20, 0.18),
+    0 4px 12px -4px rgba(34, 27, 20, 0.08);
+}
+
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.25) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 0.6s ease;
+}
+
+.btn-glow:hover::after {
+  transform: translateX(120%);
+}
+
+/* ---- Big display type ---- */
+.display-title {
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+/* ---- Gradient & outline type ---- */
+.text-gradient {
+  background: linear-gradient(120deg, var(--accent) 0%, var(--accent-light) 45%, var(--forest) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-outline {
+  -webkit-text-stroke: 1.5px rgba(168, 91, 56, 0.35);
+  color: transparent;
+}
+
+/* ---- Marquee (RTL aware) ---- */
+@keyframes marquee-ltr {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes marquee-rtl {
+  from { transform: translateX(0); }
+  to { transform: translateX(50%); }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-ltr 32s linear infinite;
+}
+
+[dir="rtl"] .marquee-track {
+  animation-name: marquee-rtl;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+
+/* ---- Glass panel ---- */
+.glass {
+  background: rgba(253, 250, 245, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* ---- Organic blobs ---- */
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  pointer-events: none;
 }

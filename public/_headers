@@ -1,0 +1,20 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/ar/opengraph-image
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400
+
+/en/opengraph-image
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400
+
+/fr/opengraph-image
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400

@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Everest Home — Furniture & Interior Design
 
-## Getting Started
+موقع ثلاثي اللغات (العربية / English / Français) لشركة **Everest Home** — أثاث مخصص وتصميم داخلي في جنوب لبنان.
 
-First, run the development server:
+## المميزات
+
+- 🌍 **3 لغات** مع صفحات ثابتة منفصلة: `/ar` `/en` `/fr` + صفحة اختيار لغة على `/`
+- 🎨 تصميم 2026: warm minimalism, bento grids, micro-interactions, scroll-reveal
+- 🧊 **مشهد 3D تفاعلي** في الـ Hero (Three.js + React Three Fiber)
+- 🔍 **SEO/GEO/AEO كامل**:
+  - `hreflang` + canonical لكل لغة
+  - JSON-LD: `HomeAndConstructionBusiness`, `Organization`, `FAQPage` (مع `inLanguage`)
+  - `sitemap.xml` متعدد اللغات + `robots.txt` + `llms.txt` لمحركات الـ AI (ChatGPT/Gemini/Perplexity)
+  - JSON-LD إضافي: `WebSite`, `OfferCatalog` (4 خدمات), `BreadcrumbList`
+  - Geo meta tags (geo.region, geo.placename, ICBM) لجنوب لبنان
+  - عناوين H1/H2 بصيغة أسئلة جاهزة لمحركات الإجابة (AEO)
+- 📍 GEO محلي: التركيز على South Lebanon والمدن (صور، النبطية، بنت جبيل...)
+- 📱 متجاوب بالكامل مع RTL/LTR حسب اللغة
+
+## الأوامر
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev    # تشغيل محلي
+npm run build  # بناء النسخة الثابتة في out/
+npm run lint   # فحص الكود
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## تعديل المحتوى
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- النصوص بثلاث لغات: `messages/ar.ts` · `messages/en.ts` · `messages/fr.ts`
+- أرقام الهاتف وروابط التواصل: `app/i18n.ts` (ثوابت `phones`, `instagramUrl`)
+- المشهد ثلاثي الأبعاد: `app/components/Scene3D.tsx`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## النشر على Cloudflare Pages
 
-## Learn More
+1. ارفع المشروع على GitHub/GitLab.
+2. في Cloudflare Pages أنشئ مشروعاً جديداً واربطه بالمستودع:
+   - **Build command:** `npm run build`
+   - **Build output directory:** `out`
+3. (اختياري) أضف متغير بيئة `NEXT_PUBLIC_SITE_URL` بدومينك النهائي، مثل:
+   `https://everesthome.com` — حتى تتحدث روابط canonical و hreflang والـ sitemap.
+4. بعد أول نشر، حدّث الدومين داخل `public/sitemap.xml` و `public/robots.txt` إذا كان مختلفاً عن `everesthome.pages.dev`.
 
-To learn more about Next.js, take a look at the following resources:
+ملف `public/_headers` يضيف تلقائياً security headers وتخزين مؤقت طويل للأصول الثابتة.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## قبل الإطلاق
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [ ] استبدل صور الـ Gallery الوهمية بصور قبل/بعد وفيديوهات حقيقية
+- [ ] تأكد من رابط الإنستغرام الصحيح
+- [ ] حدّث الدومين في `sitemap.xml` و `robots.txt`
+- [ ] فعّل `NEXT_PUBLIC_SITE_URL` في إعدادات Cloudflare
