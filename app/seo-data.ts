@@ -166,6 +166,51 @@ export const pseoSubServices: ServiceDef[] = [
       fr: ["Tapissage canapés et chaises", "Remplacement mousse et ressorts", "Tissus anti-taches et enfants", "Rénovation complète de salons", "Têtes de lit capitonnées", "Consultation tissu gratuite"],
     },
   },
+  {
+    slug: "dining-buffet",
+    dictIndex: -1,
+    names: { ar: "غرف طعام ونيش", en: "Dining Rooms & Buffets", fr: "Salles à manger & Buffets" },
+    intros: {
+      ar: "غرف طعام كاملة وقطع نيش وبوفيه بتصاميم تليق بالضيافة اللبنانية: طاولات سفرة كبيرة، كراسي مريحة، ووحدات عرض فخمة لأطقمك وأوانيك.",
+      en: "Complete dining rooms and buffet pieces designed for Lebanese hospitality: large dining tables, comfortable chairs, and luxury display units for your sets and serveware.",
+      fr: "Des salles à manger complètes et des buffets pensés pour l'hospitalité libanaise : grandes tables, chaises confortables et vitrines luxueuses pour vos services.",
+    },
+    items: {
+      ar: ["طاولات سفرة من 6 إلى 14 شخص", "كراسي طعام منجدة مريحة", "نيش وبوفيه بزجاج وإضاءة", "وحدات عرض للأطقم والأواني", "كونسولات سفرة", "تصاميم كلاسيك ومودرن ونيو كلاسيك"],
+      en: ["Dining tables for 6 to 14 people", "Comfortable upholstered dining chairs", "Buffets and vitrines with glass and lighting", "Display units for sets and serveware", "Dining consoles", "Classic, modern and neo-classic designs"],
+      fr: ["Tables de 6 à 14 personnes", "Chaises de salle à manger capitonnées", "Buffets et vitrines avec verre et éclairage", "Vitrines pour services et vaisselle", "Consoles de salle à manger", "Designs classique, moderne et néo-classique"],
+    },
+  },
+  {
+    slug: "home-office",
+    dictIndex: -1,
+    names: { ar: "مكاتب منزلية", en: "Home Office Furniture", fr: "Bureau à domicile" },
+    intros: {
+      ar: "مكاتب منزلية عملية وأنيقة: مكاتب بمقاسات مخصصة، مكتبات ورفوف، ووحدات تخزين ملفات — لبيئة شغل مريحة ومرتبة داخل بيتك.",
+      en: "Practical and elegant home offices: custom-size desks, libraries and shelving, and file storage units — for a comfortable, organized workspace at home.",
+      fr: "Des bureaux à domicile pratiques et élégants : bureaux sur mesure, bibliothèques et étagères, rangements pour dossiers — pour un espace de travail confortable à la maison.",
+    },
+    items: {
+      ar: ["مكاتب حسب المقاس", "مكتبات ورفوف كتب", "وحدات تخزين ملفات", "حلول إخفاء كابلات وشواحن", "تصميم زوايا شغل للمساحات الصغيرة", "مفروشات مكاتب وشركات"],
+      en: ["Custom-size desks", "Libraries and bookshelves", "File storage units", "Cable and charger concealment", "Small-space work corner designs", "Office and company furniture"],
+      fr: ["Bureaux sur mesure", "Bibliothèques et étagères", "Rangements pour dossiers", "Dissimulation des câbles et chargeurs", "Coins travail pour petits espaces", "Mobilier de bureaux et entreprises"],
+    },
+  },
+  {
+    slug: "entrance-console",
+    dictIndex: -1,
+    names: { ar: "مداخل وكونسول", en: "Entrance & Console Tables", fr: "Entrées & Consoles" },
+    intros: {
+      ar: "مدخل بيتك هو أول انطباع: كونسولات ومداخل بتصاميم فاخرة مع مرايا ووحدات استقبال تعكس ذوقك من أول خطوة.",
+      en: "Your entrance is the first impression: luxury consoles and entryway designs with mirrors and reception units that reflect your taste from the first step.",
+      fr: "Votre entrée est la première impression : consoles et entrées au design luxueux avec miroirs et meubles d'accueil qui reflètent votre goût dès le premier pas.",
+    },
+    items: {
+      ar: ["كونسولات مداخل", "مرايا ديكور بإطارات خشبية", "وحدات استقبال وتخزين مفاتيح", "طاولات زاوية وجانبية", "إضاءة مداخل مخفية", "تفاصيل نحاس وذهب"],
+      en: ["Entrance consoles", "Decor mirrors with wooden frames", "Reception and key storage units", "Corner and side tables", "Hidden entrance lighting", "Brass and gold details"],
+      fr: ["Consoles d'entrée", "Miroirs décor à cadres en bois", "Meubles d'accueil et rangement clés", "Tables d'angle et d'appoint", "Éclairage d'entrée dissimulé", "Détails laiton et or"],
+    },
+  },
 ];
 
 export const pseoCities: CityDef[] = [

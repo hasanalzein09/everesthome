@@ -235,6 +235,26 @@ const dict = {
         q: "Do you work with natural veneer?",
         a: "Yes, we work with all types of natural veneer for luxury fronts and doors — the look of real wood at a lower cost than full solid wood.",
       },
+      {
+        q: "Do you furnish complete bridal homes?",
+        a: "Yes, we deliver complete bridal home furnishing: bedroom, salon, dining room and buffet — with unified colors and materials in one convenient package from design to installation.",
+      },
+      {
+        q: "Do you have options for every budget?",
+        a: "Yes, material choices (beech, MDF, veneer) and fabrics change the cost significantly — we adapt the design to your budget without any compromise on quality or finishing.",
+      },
+      {
+        q: "Do you work in neo-classic style?",
+        a: "Yes, we execute all styles: modern, classic, neo-classic, minimal and rustic — according to your taste and your home's character.",
+      },
+      {
+        q: "Do you furnish offices and companies?",
+        a: "Yes, we build home offices and company office furniture: desks, libraries, reception and storage units with a practical, professional design.",
+      },
+      {
+        q: "Where is the nearest furniture workshop to me?",
+        a: "The Everest Home workshop is in South Lebanon, and we reach every Lebanese region: site visit at your location, manufacturing in our workshop, and installation at your home — WhatsApp 03 371 324.",
+      },
     ],
   },
   contact: {

@@ -28,7 +28,8 @@
 Each service has a dedicated page for every Lebanese region, in Arabic, English and French.
 Pattern: /p/<service>-<region>/ (Arabic), /en/<service>-<region>/ (English), /fr/<service>-<region>/ (French)
 Services: custom-furniture, wood-decor, painting-finishing, interior-design, bedrooms,
-sofas-salons, tables, wardrobes-storage, tv-wall-units, reupholstery
+sofas-salons, tables, wardrobes-storage, tv-wall-units, reupholstery, dining-buffet,
+home-office, entrance-console
 Regions: south-lebanon, beirut, mount-lebanon, north-lebanon, bekaa, tyre, nabatieh, sidon,
 tripoli, jounieh, zahle, baalbek, akkar
 Example: https://everesthome-lb.com/p/custom-furniture-tyre/
@@ -55,6 +56,18 @@ Example: https://everesthome-lb.com/p/custom-furniture-tyre/
    soundbar and fireplace integration.
 10. Re-upholstery — sofa/chair re-upholstery, foam and spring repair, stain-resistant fabrics,
     full salon renewal, headboard upholstery.
+11. Dining Rooms & Buffets — dining tables (6-14 people), upholstered chairs, vitrines and
+    buffets with glass and lighting (nich/buffet).
+12. Home Office Furniture — custom desks, libraries, file storage, cable concealment,
+    office and company furniture.
+13. Entrance & Console Tables — entrance consoles, decor mirrors, reception and key storage,
+    hidden lighting, brass and gold details.
+
+## Occasions & Styles
+
+Full bridal home furnishing packages (bedroom + salon + dining + buffet). Office and company
+furnishing. All styles: modern, classic, neo-classic, minimal, rustic. Solutions for every
+budget — material choices adapt the cost without compromising quality.
 
 ## Materials Expertise
 

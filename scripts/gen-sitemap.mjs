@@ -14,6 +14,9 @@ const services = [
   "wardrobes-storage",
   "tv-wall-units",
   "reupholstery",
+  "dining-buffet",
+  "home-office",
+  "entrance-console",
 ];
 const cities = [
   "south-lebanon",

@@ -235,6 +235,26 @@ const dict = {
         q: "Travaillez-vous le placage naturel ?",
         a: "Oui, nous travaillons tous les types de placage naturel pour des façades et portes haut de gamme — l'aspect du bois noble à moindre coût que le massif.",
       },
+      {
+        q: "Équipez-vous les maisons de jeunes mariés ?",
+        a: "Oui, nous livrons l'ameublement complet des maisons de jeunes mariés : chambre, salon, salle à manger et buffet — couleurs et matériaux harmonisés en un seul package, du design à la pose.",
+      },
+      {
+        q: "Avez-vous des options pour tous les budgets ?",
+        a: "Oui, le choix des matériaux (hêtre, MDF, placage) et des tissus change beaucoup le coût — nous adaptons le design à votre budget sans compromis sur la qualité ni la finition.",
+      },
+      {
+        q: "Travaillez-vous le style néo-classique ?",
+        a: "Oui, nous exécutons tous les styles : moderne, classique, néo-classique, minimal et rustique — selon vos goûts et le caractère de votre maison.",
+      },
+      {
+        q: "Équipez-vous les bureaux et entreprises ?",
+        a: "Oui, nous réalisons bureaux à domicile et mobilier d'entreprise : bureaux, bibliothèques, accueils et rangements avec un design pratique et professionnel.",
+      },
+      {
+        q: "Où est l'atelier de meubles le plus proche ?",
+        a: "L'atelier Everest Home est au Liban Sud, et nous intervenons dans tout le pays : visite chez vous, fabrication à l'atelier et installation à domicile — WhatsApp 03 371 324.",
+      },
     ],
   },
   contact: {
