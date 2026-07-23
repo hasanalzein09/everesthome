@@ -146,6 +146,26 @@ export default function PseoPage({
         <section className="relative overflow-hidden bg-forest text-white py-16 lg:py-24">
           <div className="blob w-[380px] h-[380px] bg-accent/25 -top-24 -end-24" />
           <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <nav aria-label="Breadcrumb" className="mb-6">
+              <ol className="flex flex-wrap items-center justify-center gap-2 text-xs text-white/50">
+                <li>
+                  <a href={locale === "ar" ? "/" : `/${locale}/`} className="hover:text-gold transition-colors">
+                    Everest Home
+                  </a>
+                </li>
+                <li aria-hidden>/</li>
+                <li>
+                  <a
+                    href={locale === "ar" ? "/#services" : `/${locale}/#services`}
+                    className="hover:text-gold transition-colors"
+                  >
+                    {dict.nav.services}
+                  </a>
+                </li>
+                <li aria-hidden>/</li>
+                <li className="text-gold">{h1}</li>
+              </ol>
+            </nav>
             <p className="text-gold text-sm font-bold tracking-[0.25em] uppercase mb-4">
               Everest Home · {dict.contact.locationValue}
             </p>

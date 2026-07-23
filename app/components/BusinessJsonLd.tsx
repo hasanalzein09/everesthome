@@ -26,6 +26,11 @@ export default function BusinessJsonLd({
       addressRegion: "South Lebanon",
       addressCountry: "LB",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 33.2721,
+      longitude: 35.2033,
+    },
     areaServed: { "@type": "Country", name: "Lebanon" },
     sameAs: [instagramUrl],
     inLanguage: locale,

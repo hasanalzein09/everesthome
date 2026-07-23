@@ -9,6 +9,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Marquee from "../components/Marquee";
 import About from "../components/About";
+import QuickFacts from "../components/QuickFacts";
 import Services from "../components/Services";
 import WhyUs from "../components/WhyUs";
 import Projects from "../components/Projects";
@@ -90,6 +91,7 @@ export default async function LocalePage({
           ]}
         />
         <About dict={dict} />
+        <QuickFacts dict={dict} locale={safeLocale} />
         <Services dict={dict} />
         <WhyUs dict={dict} />
         <Projects dict={dict} />

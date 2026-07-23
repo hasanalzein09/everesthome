@@ -3,6 +3,19 @@ import SectionTitle from "./SectionTitle";
 import Reveal from "./Reveal";
 
 export default function Process({ dict }: { dict: Dictionary }) {
+  const howToJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: dict.process.title,
+    description: dict.process.description,
+    step: dict.process.steps.map((step) => ({
+      "@type": "HowToStep",
+      position: Number(step.number),
+      name: step.title,
+      text: step.description,
+    })),
+  };
+
   return (
     <section className="py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,6 +45,11 @@ export default function Process({ dict }: { dict: Dictionary }) {
           ))}
         </div>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+      />
     </section>
   );
 }
