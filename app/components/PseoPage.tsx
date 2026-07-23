@@ -146,7 +146,7 @@ export default function PseoPage({
         <section className="relative overflow-hidden bg-forest text-white py-16 lg:py-24">
           <div className="blob w-[380px] h-[380px] bg-accent/25 -top-24 -end-24" />
           <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p className="text-[#e8c9a8] text-sm font-bold tracking-[0.25em] uppercase mb-4">
+            <p className="text-gold text-sm font-bold tracking-[0.25em] uppercase mb-4">
               Everest Home · {dict.contact.locationValue}
             </p>
             <h1 className="display-title text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">

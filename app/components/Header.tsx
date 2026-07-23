@@ -46,6 +46,22 @@ export default function Header({ dict, locale }: HeaderProps) {
           : "bg-transparent"
       }`}
     >
+      <div className="bg-espresso text-white/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-9 flex items-center justify-between text-xs">
+          <span className="eyebrow !text-[10px] text-gold">
+            Everest Home · Lebanon
+          </span>
+          <div className="flex items-center gap-4">
+            <a href="tel:+9613371324" dir="ltr" className="hover:text-gold transition-colors">
+              03 371 324
+            </a>
+            <span className="text-white/25">|</span>
+            <a href="tel:+9613949839" dir="ltr" className="hover:text-gold transition-colors">
+              03 949 839
+            </a>
+          </div>
+        </div>
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <a href="#home" className="flex flex-col leading-tight">
@@ -89,7 +105,7 @@ export default function Header({ dict, locale }: HeaderProps) {
             </div>
             <a
               href="#contact"
-              className="btn-glow inline-flex items-center justify-center rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-accent-light transition-colors"
+              className="btn-gold inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-bold"
             >
               {dict.nav.cta}
             </a>
@@ -137,7 +153,7 @@ export default function Header({ dict, locale }: HeaderProps) {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="btn-glow mt-1 inline-flex items-center justify-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white"
+              className="btn-gold mt-1 inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-bold"
             >
               {dict.nav.cta}
             </a>

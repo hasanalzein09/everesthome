@@ -11,7 +11,7 @@ export default function CtaBand({ dict }: { dict: Dictionary }) {
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <Reveal>
-          <p className="text-[#e8c9a8] text-sm font-bold tracking-[0.3em] uppercase mb-5">
+          <p className="text-gold text-sm font-bold tracking-[0.3em] uppercase mb-5">
             Everest Home
           </p>
           <h2 className="display-title text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">

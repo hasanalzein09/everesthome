@@ -14,7 +14,7 @@ export default function Projects({ dict }: { dict: Dictionary }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="text-center mb-12 lg:mb-16">
-            <span className="inline-block text-xs font-bold tracking-[0.25em] uppercase text-[#e8c9a8] mb-3">
+            <span className="eyebrow inline-block text-gold mb-3">
               {dict.projects.label}
             </span>
             <h2 className="display-title text-3xl sm:text-4xl lg:text-5xl font-extrabold">
@@ -23,7 +23,11 @@ export default function Projects({ dict }: { dict: Dictionary }) {
             <p className="mt-5 max-w-2xl mx-auto text-white/70 leading-relaxed text-lg">
               {dict.projects.description}
             </p>
-            <span className="mt-6 inline-block h-1 w-16 rounded-full bg-[#e8c9a8]/70" />
+            <div className="mt-7 flex items-center justify-center gap-3">
+              <span className="gold-line w-14" />
+              <span className="w-1.5 h-1.5 rotate-45 bg-gold" />
+              <span className="gold-line w-14" />
+            </div>
           </div>
         </Reveal>
 
@@ -33,7 +37,7 @@ export default function Projects({ dict }: { dict: Dictionary }) {
               <div
                 className={`card-lift h-full rounded-[1.75rem] bg-gradient-to-br ${gradients[index % gradients.length]} p-6 lg:p-7 min-h-[220px] flex flex-col justify-end shadow-lg`}
               >
-                <span className="text-4xl font-extrabold text-white/15 mb-auto">
+                <span className="text-5xl font-bold text-gold/40 mb-auto">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <h3 className="text-lg font-bold text-white mt-6">

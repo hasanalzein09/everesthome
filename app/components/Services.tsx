@@ -32,7 +32,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
                   }`}
                 >
                   {featured && (
-                    <span className="absolute -top-6 -end-4 text-[9rem] font-extrabold text-white/5 leading-none select-none">
+                    <span className="absolute -top-6 -end-4 text-[9rem] font-bold text-gold/10 leading-none select-none">
                       01
                     </span>
                   )}
@@ -47,7 +47,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
                     <div>
                       <span
                         className={`block text-xs font-bold tracking-widest ${
-                          featured ? "text-[#e8c9a8]" : "text-accent"
+                          featured ? "text-gold" : "text-accent"
                         }`}
                       >
                         {String(index + 1).padStart(2, "0")}
@@ -74,7 +74,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
                         key={item}
                         className={`flex items-start gap-2 text-sm before:content-['•'] before:font-bold before:text-base before:leading-5 ${
                           featured
-                            ? "text-white/85 before:text-[#e8c9a8]"
+                            ? "text-white/85 before:text-gold"
                             : "text-foreground/80 before:text-accent"
                         }`}
                       >

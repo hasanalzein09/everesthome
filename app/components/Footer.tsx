@@ -25,7 +25,7 @@ export default function Footer({
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
           <div className="text-center lg:text-start">
             <h3 className="text-2xl font-extrabold">
-              Everest <span className="text-[#e8a87c]">Home</span>
+              Everest <span className="text-gold">Home</span>
             </h3>
             <p className="text-white/60 text-sm mt-1.5">{dict.footer.tagline}</p>
             <p className="text-white/40 text-xs mt-1">{dict.footer.madeIn}</p>
@@ -51,7 +51,7 @@ export default function Footer({
                 hrefLang={l === "ar" ? "ar-LB" : l}
                 className={`px-3 py-1.5 rounded-full border transition-colors ${
                   l === locale
-                    ? "bg-[#e8a87c] text-foreground border-[#e8a87c] font-bold"
+                    ? "bg-gold text-foreground border-gold font-bold"
                     : "text-white/60 border-white/20 hover:text-white"
                 }`}
               >

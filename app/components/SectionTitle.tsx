@@ -11,10 +11,8 @@ export default function SectionTitle({
 }: SectionTitleProps) {
   return (
     <div className="text-center mb-12 lg:mb-16">
-      <span className="inline-block text-xs font-bold tracking-[0.25em] uppercase text-accent mb-3">
-        {label}
-      </span>
-      <h2 className="display-title text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground">
+      <span className="eyebrow inline-block text-gold-deep mb-3">{label}</span>
+      <h2 className="display-title text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
         {title}
       </h2>
       {description && (
@@ -22,7 +20,11 @@ export default function SectionTitle({
           {description}
         </p>
       )}
-      <span className="mt-6 inline-block h-1 w-16 rounded-full bg-accent/70" />
+      <div className="mt-7 flex items-center justify-center gap-3">
+        <span className="gold-line w-14" />
+        <span className="w-1.5 h-1.5 rotate-45 bg-gold" />
+        <span className="gold-line w-14" />
+      </div>
     </div>
   );
 }

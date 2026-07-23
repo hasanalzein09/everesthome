@@ -18,7 +18,7 @@ export default function Process({ dict }: { dict: Dictionary }) {
           {dict.process.steps.map((step, index) => (
             <Reveal key={step.number} delay={index * 90}>
               <div className="card-lift relative h-full rounded-[1.75rem] bg-card border border-foreground/5 p-7 pt-10 text-center shadow-sm">
-                <span className="absolute -top-5 right-1/2 translate-x-1/2 w-11 h-11 rounded-2xl rotate-3 bg-accent text-white flex items-center justify-center font-extrabold text-lg shadow-lg shadow-accent/30">
+                <span className="absolute -top-5 right-1/2 translate-x-1/2 w-11 h-11 rounded-2xl rotate-3 btn-gold flex items-center justify-center font-bold text-lg">
                   {step.number}
                 </span>
                 <h3 className="mt-2 text-xl font-bold text-foreground mb-2">

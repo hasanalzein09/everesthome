@@ -9,6 +9,9 @@
   --muted: #efe7da;
   --card: #fdfaf5;
   --forest: #2e4034;
+  --gold: #c0a062;
+  --gold-deep: #a8853f;
+  --espresso: #1a1410;
 }
 
 @theme inline {
@@ -20,7 +23,11 @@
   --color-muted: var(--muted);
   --color-card: var(--card);
   --color-forest: var(--forest);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-espresso: var(--espresso);
   --font-sans: var(--font-cairo);
+  --font-display: var(--font-marcellus), var(--font-amiri), serif;
 }
 
 html {
@@ -102,10 +109,68 @@ body {
   transform: translateX(120%);
 }
 
-/* ---- Big display type ---- */
+/* ---- Luxury typography ---- */
+h1, h2, h3, h4 {
+  font-family: var(--font-marcellus), var(--font-amiri), serif;
+  letter-spacing: -0.01em;
+}
+
 .display-title {
   letter-spacing: -0.02em;
   line-height: 1.05;
+}
+
+/* ---- Luxury details ---- */
+.btn-gold {
+  background: linear-gradient(135deg, #d8bd85 0%, var(--gold) 45%, var(--gold-deep) 100%);
+  color: var(--espresso);
+  box-shadow: 0 14px 34px -12px rgba(168, 133, 63, 0.55);
+  transition: filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-gold:hover {
+  filter: brightness(1.06);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 44px -14px rgba(168, 133, 63, 0.65);
+}
+
+.arch {
+  border-radius: 12rem 12rem 1.75rem 1.75rem;
+}
+
+.arch-sm {
+  border-radius: 7rem 7rem 1.25rem 1.25rem;
+}
+
+.gold-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.eyebrow {
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+/* ---- Custom scrollbar ---- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--gold), var(--accent));
+  border-radius: 8px;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold) var(--muted);
 }
 
 /* ---- Gradient & outline type ---- */

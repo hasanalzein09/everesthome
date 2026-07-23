@@ -1,12 +1,24 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Cairo } from "next/font/google";
+import { Cairo, Amiri, Marcellus } from "next/font/google";
 import "./globals.css";
 
 const cairo = Cairo({
   variable: "--font-cairo",
   subsets: ["latin", "arabic"],
   weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const amiri = Amiri({
+  variable: "--font-amiri",
+  subsets: ["arabic", "latin"],
+  weight: ["400", "700"],
+});
+
+const marcellus = Marcellus({
+  variable: "--font-marcellus",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +40,7 @@ export default function RootLayout({
       lang="ar"
       dir="rtl"
       suppressHydrationWarning
-      className={`${cairo.variable} antialiased`}
+      className={`${cairo.variable} ${amiri.variable} ${marcellus.variable} antialiased`}
     >
       <body className="min-h-screen font-sans texture-grain">
         <Script id="locale-attrs" strategy="beforeInteractive">

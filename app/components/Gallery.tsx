@@ -20,7 +20,7 @@ export default function Gallery({ dict }: { dict: Dictionary }) {
             const isVideo = index % 3 !== 0;
             return (
               <Reveal key={label} delay={index * 70}>
-                <div className="card-lift group relative aspect-[4/3] rounded-[1.75rem] overflow-hidden bg-gradient-to-br from-[#d8cbb8] to-[#c3b199] flex items-center justify-center">
+                <div className="card-lift group relative aspect-[4/3] arch-sm overflow-hidden bg-gradient-to-br from-[#d8cbb8] to-[#c3b199] flex items-center justify-center border border-gold/25">
                   <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.7)_0,transparent_50%)]" />
                   <div className="relative flex flex-col items-center text-foreground/50 group-hover:text-accent transition-colors px-4 text-center">
                     {isVideo ? <Play size={38} /> : <ImageIcon size={38} />}
