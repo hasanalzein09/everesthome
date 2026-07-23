@@ -207,6 +207,18 @@ const dict = {
         q: "La première consultation est-elle gratuite ?",
         a: "Oui, la première consultation est entièrement gratuite : nous écoutons votre idée, évaluons l'espace et vous proposons les solutions et matériaux adaptés avant tout engagement.",
       },
+      {
+        q: "Retapissez-vous les vieux canapés et meubles ?",
+        a: "Oui, nous retapissons canapés, chaises et salons complets avec des tissus modernes anti-taches, y compris la réparation de la mousse et des ressorts — de vraies économies par rapport au neuf.",
+      },
+      {
+        q: "Réalisez-vous des murs TV et meubles médias intégrés ?",
+        a: "Oui, nous réalisons des murs TV intégrés avec panneaux bois 3D, éclairage dissimulé, câbles entièrement cachés et étagères d'exposition.",
+      },
+      {
+        q: "Faites-vous des chambres d'enfants ?",
+        a: "Oui, nous concevons et réalisons des chambres d'enfants pratiques et sûres, avec des matériaux sains et des rangements malins adaptés à la pièce et à l'âge de l'enfant.",
+      },
     ],
   },
   contact: {

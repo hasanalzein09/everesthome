@@ -27,7 +27,8 @@
 
 Each service has a dedicated page for every Lebanese region, in Arabic, English and French.
 Pattern: /p/<service>-<region>/ (Arabic), /en/<service>-<region>/ (English), /fr/<service>-<region>/ (French)
-Services: custom-furniture, wood-decor, painting-finishing, interior-design
+Services: custom-furniture, wood-decor, painting-finishing, interior-design, bedrooms,
+sofas-salons, tables, wardrobes-storage, tv-wall-units, reupholstery
 Regions: south-lebanon, beirut, mount-lebanon, north-lebanon, bekaa, tyre, nabatieh, sidon,
 tripoli, jounieh, zahle, baalbek, akkar
 Example: https://everesthome-lb.com/p/custom-furniture-tyre/
@@ -43,6 +44,17 @@ Example: https://everesthome-lb.com/p/custom-furniture-tyre/
    finishes, natural wood grain enhancement, restoration and repainting of old furniture.
 4. Interior Design — on-site consultations, space planning, furniture/lighting/accessories selection,
    color and material harmony, 3D visualization before execution, turnkey project management.
+5. Bedrooms — complete bedrooms: headboard beds, built-in wardrobes, nightstands, dressers,
+   kids' bedrooms, hidden lighting.
+6. Sofas & Living Rooms — L/U-shaped sectionals, reception salons, sofa beds, velvet/linen/leather
+   fabrics, matching coffee tables.
+7. Tables — dining tables (4-12 people), coffee tables, side tables, marble/ceramic/wood tops.
+8. Wardrobes & Storage — walk-in closets, floor-to-ceiling built-ins, TV storage units,
+   small-space solutions.
+9. TV Walls & Media Units — integrated TV walls, 3D panels, hidden LED, cable concealment,
+   soundbar and fireplace integration.
+10. Re-upholstery — sofa/chair re-upholstery, foam and spring repair, stain-resistant fabrics,
+    full salon renewal, headboard upholstery.
 
 ## Areas Served
 

@@ -2,9 +2,12 @@ import type { Locale } from "./i18n";
 
 export interface ServiceDef {
   slug: string;
+  /** Index into dict.services.items, or -1 when the service has its own items list */
   dictIndex: number;
   names: Record<Locale, string>;
   intros: Record<Locale, string>;
+  /** Standalone item list (used when dictIndex is -1) */
+  items?: Record<Locale, string[]>;
 }
 
 export interface CityDef {
@@ -68,6 +71,99 @@ export const pseoServices: ServiceDef[] = [
       ar: "تصميم داخلي متكامل من الاستشارة حتى التسليم المفتاحي: توزيع مساحات، اختيار أثاث وإضاءة، تناغم ألوان وخامات، وتصور ثلاثي الأبعاد قبل التنفيذ.",
       en: "Complete interior design from consultation to turnkey delivery: space planning, furniture and lighting selection, color harmony, and 3D visualization before execution.",
       fr: "Un design d'intérieur complet, de la consultation à la livraison clé en main : aménagement, sélection de meubles et luminaires, harmonie des couleurs et visualisation 3D.",
+    },
+  },
+];
+
+export const pseoSubServices: ServiceDef[] = [
+  {
+    slug: "bedrooms",
+    dictIndex: -1,
+    names: { ar: "غرف نوم", en: "Bedrooms", fr: "Chambres" },
+    intros: {
+      ar: "غرف نوم كاملة بتصميم هادئ وراقي: سرير بظهر مميز، خزائن مدمجة حتى السقف، كومودينو وتسريحة — بتشطيبات دافئة وخامات مريحة تدوم.",
+      en: "Complete bedrooms with a calm, elegant design: statement headboard bed, floor-to-ceiling wardrobes, nightstands and dresser — warm finishes and lasting materials.",
+      fr: "Des chambres complètes au design apaisant et élégant : lit à tête remarquable, dressings jusqu'au plafond, chevets et coiffeuse — finitions chaleureuses et matériaux durables.",
+    },
+    items: {
+      ar: ["أسرّة بظهور خشبية ومنجدة", "خزائن ملابس مدمجة حتى السقف", "كومودينو ووحدات جانبية", "تسريحات ومرايا", "غرف نوم أطفال عملية وآمنة", "إضاءة مخفية وتفاصيل راقية"],
+      en: ["Beds with wooden and upholstered headboards", "Floor-to-ceiling built-in wardrobes", "Nightstands and side units", "Dressers and mirrors", "Practical and safe kids' bedrooms", "Hidden lighting and refined details"],
+      fr: ["Lits à têtes en bois et capitonnées", "Dressings intégrés jusqu'au plafond", "Chevets et unités latérales", "Coiffeuses et miroirs", "Chambres d'enfants pratiques et sûres", "Éclairage dissimulé et détails raffinés"],
+    },
+  },
+  {
+    slug: "sofas-salons",
+    dictIndex: -1,
+    names: { ar: "كنب وصالونات", en: "Sofas & Living Rooms", fr: "Canapés & Salons" },
+    intros: {
+      ar: "كنب وصالونات مريحة بتصاميم عصرية: زوايا كبيرة بحرف L أو U، صالونات استقبال فخمة، وأقمشة مخمل وكتان تتحمل الاستخدام اليومي.",
+      en: "Comfortable sofas and salons with modern designs: large L and U-shaped sectionals, luxury reception salons, and velvet and linen fabrics built for daily life.",
+      fr: "Des canapés et salons confortables au design moderne : grands angles en L ou U, salons de réception luxueux, et tissus velours et lin pensés pour le quotidien.",
+    },
+    items: {
+      ar: ["زوايا كنب L و U", "صالونات استقبال فخمة", "كنب سرير عملي", "أقمشة مخمل وكتان وجلد", "إعادة تنجيد الكنب القديم", "طاولات وسط متناسقة"],
+      en: ["L and U-shaped sectional sofas", "Luxury reception salons", "Practical sofa beds", "Velvet, linen and leather fabrics", "Re-upholstery of old sofas", "Matching coffee tables"],
+      fr: ["Canapés d'angle en L et U", "Salons de réception luxueux", "Canapés-lits pratiques", "Tissus velours, lin et cuir", "Retapissage d'anciens canapés", "Tables basses assorties"],
+    },
+  },
+  {
+    slug: "tables",
+    dictIndex: -1,
+    names: { ar: "طاولات", en: "Tables", fr: "Tables" },
+    intros: {
+      ar: "طاولات طعام ووسط بخشب متين وتصاميم ثابتة وأنيقة: أسطح رخام وسيراميك وخشب طبيعي، بقواعد معدن أو خشب وبكل المقاسات.",
+      en: "Dining and coffee tables in solid wood with elegant, sturdy designs: marble, ceramic and natural wood tops, metal or wooden bases, in all sizes.",
+      fr: "Tables à manger et tables basses en bois massif, designs élégants et robustes : plateaux marbre, céramique et bois naturel, pieds métal ou bois, toutes dimensions.",
+    },
+    items: {
+      ar: ["طاولات طعام من 4 إلى 12 شخص", "طاولات وسط", "طاولات جانبية", "أسطح رخام وسيراميك وخشب", "قواعد معدن وخشب", "مقاسات مخصصة حسب المساحة"],
+      en: ["Dining tables for 4 to 12 people", "Coffee tables", "Side tables", "Marble, ceramic and wood tops", "Metal and wooden bases", "Custom sizes for your space"],
+      fr: ["Tables à manger de 4 à 12 personnes", "Tables basses", "Tables d'appoint", "Plateaux marbre, céramique et bois", "Pieds métal et bois", "Dimensions sur mesure"],
+    },
+  },
+  {
+    slug: "wardrobes-storage",
+    dictIndex: -1,
+    names: { ar: "خزائن ووحدات تخزين", en: "Wardrobes & Storage", fr: "Dressings & Rangements" },
+    intros: {
+      ar: "خزائن مدمجة ووحدات تخزين ذكية تستغل كل سنتمتر: غرف ملابس walk-in، خزائن حائط حتى السقف، وحلول عملية للمساحات الصغيرة.",
+      en: "Built-in wardrobes and smart storage that uses every centimeter: walk-in closets, floor-to-ceiling units, and practical solutions for small spaces.",
+      fr: "Dressings intégrés et rangements malins qui exploitent chaque centimètre : walk-in, unités jusqu'au plafond et solutions pratiques pour petits espaces.",
+    },
+    items: {
+      ar: ["غرف ملابس walk-in", "خزائن مدمجة حتى السقف", "وحدات تخزين تلفزيون", "أدراج ورفوف داخلية منظمة", "حلول للمساحات الصغيرة", "أبواب سحابة ومفصلية"],
+      en: ["Walk-in closets", "Floor-to-ceiling built-ins", "TV storage units", "Organized drawers and shelves", "Small-space solutions", "Sliding and hinged doors"],
+      fr: ["Dressings walk-in", "Unités intégrées jusqu'au plafond", "Meubles TV avec rangement", "Tiroirs et étagères organisés", "Solutions petits espaces", "Portes coulissantes et battantes"],
+    },
+  },
+  {
+    slug: "tv-wall-units",
+    dictIndex: -1,
+    names: { ar: "وحدات تلفزيون وديكور جدران", en: "TV Walls & Media Units", fr: "Murs TV & Médias" },
+    intros: {
+      ar: "جدران تلفزيون مدمجة بتصميم معماري: ألواح خشبية ثلاثية الأبعاد، إضاءة مخفية، رفوف عرض، وإخفاء كامل للكابلات — الواجهة الأجمل لصالونك.",
+      en: "Built-in TV walls with architectural design: 3D wooden panels, hidden lighting, display shelves, and fully concealed cables — the most beautiful face of your living room.",
+      fr: "Murs TV intégrés au design architectural : panneaux bois 3D, éclairage dissimulé, étagères d'exposition et câbles entièrement cachés — la plus belle pièce de votre salon.",
+    },
+    items: {
+      ar: ["وحدات تلفزيون مدمجة", "ألواح حائط خشبية 3D", "إضاءة LED مخفية", "إخفاء كامل للكابلات", "رفوف وديكورات عرض", "دمج soundbar ومدفأة"],
+      en: ["Built-in TV units", "3D wooden wall panels", "Hidden LED lighting", "Full cable concealment", "Display shelves and decor", "Soundbar and fireplace integration"],
+      fr: ["Meubles TV intégrés", "Panneaux muraux bois 3D", "Éclairage LED dissimulé", "Câbles entièrement cachés", "Étagères d'exposition", "Intégration soundbar et cheminée"],
+    },
+  },
+  {
+    slug: "reupholstery",
+    dictIndex: -1,
+    names: { ar: "تنجيد وإعادة تنجيد", en: "Re-upholstery", fr: "Retapissage" },
+    intros: {
+      ar: "جدّد كنبك وكراسيك بدل شراء جديد: تنجيد احترافي بأقمشة حديثة ضد البقع، إصلاح الإسفنج والنوابض، وتوفير كبير مقارنة بكلفة الجديد.",
+      en: "Renew your sofas and chairs instead of buying new: professional re-upholstery with modern stain-resistant fabrics, foam and spring repair, and big savings compared to new furniture.",
+      fr: "Rénovez vos canapés et chaises au lieu d'acheter du neuf : retapissage professionnel avec tissus modernes anti-taches, réparation mousse et ressorts, et de vraies économies.",
+    },
+    items: {
+      ar: ["تنجيد كنب وكراسي", "تغيير إسفنج ونوابض", "أقمشة ضد البقع والأطفال", "تجديد صالونات كاملة", "تنجيد رؤوس أسرّة", "استشارة اختيار قماش مجانية"],
+      en: ["Sofa and chair upholstery", "Foam and spring replacement", "Stain and kid-resistant fabrics", "Full salon renewal", "Headboard upholstery", "Free fabric consultation"],
+      fr: ["Tapissage canapés et chaises", "Remplacement mousse et ressorts", "Tissus anti-taches et enfants", "Rénovation complète de salons", "Têtes de lit capitonnées", "Consultation tissu gratuite"],
     },
   },
 ];
@@ -198,7 +294,9 @@ export interface Combo {
   slug: string;
 }
 
-export const pseoCombos: Combo[] = pseoServices.flatMap((service) =>
+export const allPseoServices: ServiceDef[] = [...pseoServices, ...pseoSubServices];
+
+export const pseoCombos: Combo[] = allPseoServices.flatMap((service) =>
   pseoCities.map((city) => ({
     service,
     city,
@@ -207,7 +305,7 @@ export const pseoCombos: Combo[] = pseoServices.flatMap((service) =>
 );
 
 export function parseCombo(slug: string): Combo | null {
-  for (const service of pseoServices) {
+  for (const service of allPseoServices) {
     if (slug.startsWith(service.slug + "-")) {
       const citySlug = slug.slice(service.slug.length + 1);
       const city = pseoCities.find((c) => c.slug === citySlug);

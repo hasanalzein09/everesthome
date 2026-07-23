@@ -207,6 +207,18 @@ const dict = {
         q: "Is the first consultation free?",
         a: "Yes, the first consultation is completely free: we listen to your idea, assess the space, and suggest the right solutions and materials before any commitment.",
       },
+      {
+        q: "Do you re-upholster old sofas and furniture?",
+        a: "Yes, we re-upholster sofas, chairs and full salons with modern stain-resistant fabrics, including foam and spring repair — big savings compared to buying new.",
+      },
+      {
+        q: "Do you build TV walls and media units?",
+        a: "Yes, we build integrated TV walls with 3D wooden panels, hidden lighting, full cable concealment, and display shelving.",
+      },
+      {
+        q: "Do you make kids' bedrooms?",
+        a: "Yes, we design and build practical and safe kids' bedrooms with healthy materials and smart storage suited to the room and the child's age.",
+      },
     ],
   },
   contact: {

@@ -57,6 +57,15 @@ export default function PseoPage({
   const cityName = city.names[locale];
   const h1 = `${serviceName} ${inWord[locale]} ${cityName}`;
 
+  const serviceDesc =
+    service.dictIndex >= 0
+      ? dict.services.items[service.dictIndex].desc
+      : service.intros[locale];
+  const serviceItems: string[] =
+    service.dictIndex >= 0
+      ? dict.services.items[service.dictIndex].items
+      : (service.items?.[locale] ?? []);
+
   const faqs = [
     {
       q:
@@ -207,10 +216,10 @@ export default function PseoPage({
                   {serviceName}
                 </h2>
                 <p className="text-foreground/70 leading-relaxed mb-5">
-                  {dict.services.items[service.dictIndex].desc}
+                  {serviceDesc}
                 </p>
                 <ul className="space-y-2.5">
-                  {dict.services.items[service.dictIndex].items.map((item) => (
+                  {serviceItems.map((item) => (
                     <li
                       key={item}
                       className="flex items-start gap-2 text-sm text-foreground/80 before:content-['•'] before:text-accent before:font-bold before:text-base before:leading-5"

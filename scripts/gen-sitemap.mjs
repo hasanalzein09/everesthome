@@ -8,6 +8,12 @@ const services = [
   "wood-decor",
   "painting-finishing",
   "interior-design",
+  "bedrooms",
+  "sofas-salons",
+  "tables",
+  "wardrobes-storage",
+  "tv-wall-units",
+  "reupholstery",
 ];
 const cities = [
   "south-lebanon",

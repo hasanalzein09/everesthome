@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary } from "../../i18n";
-import { pseoCombos, pseoServices, parseCombo } from "../../seo-data";
+import { allPseoServices, pseoCombos, parseCombo } from "../../seo-data";
 import PseoPage from "../../components/PseoPage";
 import BusinessJsonLd from "../../components/BusinessJsonLd";
 
@@ -64,7 +64,7 @@ export default async function ArabicComboPage({
   if (!parsed) notFound();
 
   const { service, city } = parsed;
-  const otherServices = pseoServices
+  const otherServices = allPseoServices
     .filter((s) => s.slug !== service.slug)
     .map((s) => ({ slug: `${s.slug}-${city.slug}`, name: s.names.ar }));
 

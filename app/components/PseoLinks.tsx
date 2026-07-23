@@ -1,6 +1,6 @@
 import { MapPin } from "lucide-react";
 import type { Locale } from "../i18n";
-import { pseoServices, pseoCities } from "../seo-data";
+import { allPseoServices, pseoCities } from "../seo-data";
 import Reveal from "./Reveal";
 
 const titles: Record<Locale, { title: string; subtitle: string }> = {
@@ -48,7 +48,7 @@ export default function PseoLinks({ locale }: { locale: Locale }) {
 
         <Reveal delay={160}>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2.5">
-            {pseoServices.map((service) => (
+            {allPseoServices.map((service) => (
               <a
                 key={service.slug}
                 href={`${prefix}/${service.slug}-south-lebanon/`}
