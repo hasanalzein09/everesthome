@@ -145,6 +145,51 @@ export const pseoCities: CityDef[] = [
       fr: "Saïda et la côte sud — nous arrivons vite depuis notre atelier, avec une longue expérience des maisons de Saïda.",
     },
   },
+  {
+    slug: "tripoli",
+    names: { ar: "طرابلس", en: "Tripoli", fr: "Tripoli" },
+    blurbs: {
+      ar: "طرابلس والميناء وكل الفيحاء — ننفذ مشاريع مفروشات وديكور بجودة ورشتنا نفسها مع تنسيق كامل للمواعيد.",
+      en: "Tripoli, Mina and the whole North coast — we deliver furniture and decor projects with the same workshop quality and fully coordinated scheduling.",
+      fr: "Tripoli, Mina et toute la côte nord — mêmes projets de qualité avec une coordination complète des rendez-vous.",
+    },
+  },
+  {
+    slug: "jounieh",
+    names: { ar: "جونيه", en: "Jounieh", fr: "Jounieh" },
+    blurbs: {
+      ar: "جونيه وكسروان — مشاريع شقق وفلل بتصاميم عصرية، من المعاينة المجانية حتى التركيب النهائي.",
+      en: "Jounieh and Keserwan — apartment and villa projects with modern designs, from the free visit to final installation.",
+      fr: "Jounieh et le Kesrouan — projets d'appartements et de villas au design moderne, de la visite gratuite à la pose finale.",
+    },
+  },
+  {
+    slug: "zahle",
+    names: { ar: "زحلة", en: "Zahle", fr: "Zahlé" },
+    blurbs: {
+      ar: "زحلة عروس البقاع — مفروشات وديكورات خشبية تناسب بيوت البقاع العريقة، بخامات تتحمل وتدوم.",
+      en: "Zahle, the bride of the Bekaa — furniture and wooden decor suited to Bekaa homes, with durable, long-lasting materials.",
+      fr: "Zahlé, la mariée de la Bekaa — meubles et décors en bois adaptés aux maisons de la région, avec des matériaux durables.",
+    },
+  },
+  {
+    slug: "baalbek",
+    names: { ar: "بعلبك", en: "Baalbek", fr: "Baalbek" },
+    blurbs: {
+      ar: "بعلبك والهرمل — نوصل خدماتنا لأبعد نقطة، بتخطيط مسبق للمعاينة والتسليم والتركيب.",
+      en: "Baalbek and Hermel — we bring our services to the farthest point, with pre-planned visits, delivery and installation.",
+      fr: "Baalbek et Hermel — nous apportons nos services jusqu'au point le plus éloigné, avec visites et installation planifiées.",
+    },
+  },
+  {
+    slug: "akkar",
+    names: { ar: "عكار", en: "Akkar", fr: "Akkar" },
+    blurbs: {
+      ar: "عكار وكل الشمال الأقصى — نفس الجودة والاهتمام بالتفاصيل أينما كان مشروعك في لبنان.",
+      en: "Akkar and the far North — the same quality and attention to detail wherever your project is in Lebanon.",
+      fr: "Akkar et l'extrême Nord — la même qualité et attention aux détails où que soit votre projet au Liban.",
+    },
+  },
 ];
 
 export interface Combo {

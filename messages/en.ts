@@ -1,11 +1,11 @@
 const dict = {
   meta: {
-    title: "Everest Home – Custom Furniture & Interior Design in South Lebanon",
+    title: "Everest Home – Custom Furniture & Interior Design in Lebanon",
     description:
-      "Everest Home offers custom furniture, interior design, wooden decorations, professional painting and finishing, bedrooms, living rooms and luxury home solutions in South Lebanon.",
+      "Everest Home offers custom furniture, interior design, wooden decorations, professional painting and finishing, bedrooms, living rooms and luxury home solutions across Lebanon.",
     keywords:
-      "Everest Home, furniture South Lebanon, custom furniture, interior design Lebanon, wood decor, bedrooms, living rooms, luxury furniture Lebanon",
-    ogTitle: "Everest Home – Furniture & Interior Design | South Lebanon",
+      "Everest Home, furniture Lebanon, custom furniture Lebanon, interior design Lebanon, interior design Beirut, wood decor Lebanon, bedrooms, living rooms, luxury furniture Lebanon, furniture Beirut",
+    ogTitle: "Everest Home – Furniture & Interior Design | Lebanon",
     ogDescription:
       "Custom-made furniture and interior design crafted to match your taste, with high-quality local manufacturing in South Lebanon.",
     ogLocale: "en_US",
@@ -21,7 +21,7 @@ const dict = {
     cta: "Get a Consultation",
   },
   hero: {
-    badge: "Furniture & Interior Design in South Lebanon",
+    badge: "Furniture & Interior Design across Lebanon",
     titleTop: "Everest Home",
     titleAccent: "Furniture & Interior Design",
     subtitle:

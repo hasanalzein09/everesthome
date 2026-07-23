@@ -61,8 +61,8 @@ export async function generateMetadata({
     },
     other: {
       "content-language": localeHreflang[safeLocale],
-      "geo.region": "LB-JA",
-      "geo.placename": "South Lebanon",
+      "geo.region": "LB",
+      "geo.placename": "Lebanon",
       "geo.position": "33.2721;35.2033",
       ICBM: "33.2721, 35.2033",
     },

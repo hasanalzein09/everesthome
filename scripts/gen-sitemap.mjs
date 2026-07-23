@@ -18,6 +18,11 @@ const cities = [
   "tyre",
   "nabatieh",
   "sidon",
+  "tripoli",
+  "jounieh",
+  "zahle",
+  "baalbek",
+  "akkar",
 ];
 
 const today = new Date().toISOString().slice(0, 10);

@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { routeLocales } from "../i18n";
 
-export const alt = "Everest Home – Furniture & Interior Design, South Lebanon";
+export const alt = "Everest Home – Furniture & Interior Design, Lebanon";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -54,7 +54,7 @@ export default async function OgImage({
             E
           </div>
           <span style={{ color: "#e8c9a8", fontSize: "26px", letterSpacing: "6px" }}>
-            SOUTH LEBANON
+            LEBANON
           </span>
         </div>
 

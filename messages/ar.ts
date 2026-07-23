@@ -1,11 +1,11 @@
 const dict = {
   meta: {
-    title: "Everest Home – أثاث وتصميم داخلي في جنوب لبنان",
+    title: "Everest Home – أثاث وتصميم داخلي في لبنان",
     description:
-      "Everest Home: تصنيع مفروشات مخصصة، ديكور خشبي، دهان وتشطيبات، وتصميم داخلي متكامل في جنوب لبنان. غرف نوم، صالونات، وغرف جلوس فاخرة بجودة تصنيع محلية عالية.",
+      "Everest Home: تصنيع مفروشات مخصصة، ديكور خشبي، دهان وتشطيبات، وتصميم داخلي متكامل في كل لبنان. غرف نوم، صالونات، وغرف جلوس فاخرة بجودة تصنيع محلية عالية.",
     keywords:
-      "Everest Home, أثاث جنوب لبنان, مفروشات مخصصة, تصميم داخلي لبنان, ديكور خشبي, غرف نوم, صالونات, furniture South Lebanon",
-    ogTitle: "Everest Home – Furniture & Interior Design | جنوب لبنان",
+      "Everest Home, مفروشات لبنان, أثاث لبنان, مفروشات مخصصة, مفروشات حسب الطلب, تصميم داخلي لبنان, تصميم داخلي بيروت, ديكور خشبي, ديكور لبنان, غرف نوم, صالونات, furniture Lebanon, interior design Lebanon, custom furniture Beirut",
+    ogTitle: "Everest Home – Furniture & Interior Design | لبنان",
     ogDescription:
       "مفروشات وديكورات داخلية مصممة خصيصاً لتناسب ذوقك، بجودة تصنيع محلية عالية في جنوب لبنان.",
     ogLocale: "ar_LB",
@@ -21,7 +21,7 @@ const dict = {
     cta: "احصل على استشارة",
   },
   hero: {
-    badge: "أثاث وتصميم داخلي في جنوب لبنان",
+    badge: "أثاث وتصميم داخلي في كل لبنان",
     titleTop: "Everest Home",
     titleAccent: "Furniture & Interior Design",
     subtitle:

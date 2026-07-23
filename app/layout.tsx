@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   ),
   title: "Everest Home – Furniture & Interior Design",
   description:
-    "Everest Home offers custom furniture, interior design, wooden decorations, bedrooms, living rooms and luxury home solutions in South Lebanon.",
+    "Everest Home offers custom furniture, interior design, wooden decorations, bedrooms, living rooms and luxury home solutions across Lebanon.",
 };
 
 export default function RootLayout({

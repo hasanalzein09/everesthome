@@ -1,11 +1,11 @@
 const dict = {
   meta: {
-    title: "Everest Home – Meubles sur mesure & Design d'intérieur au Liban Sud",
+    title: "Everest Home – Meubles sur mesure & Design d'intérieur au Liban",
     description:
-      "Everest Home propose des meubles sur mesure, du design d'intérieur, des décorations en bois, de la peinture et des finitions professionnelles, chambres, salons et solutions haut de gamme au Liban Sud.",
+      "Everest Home propose des meubles sur mesure, du design d'intérieur, des décorations en bois, de la peinture et des finitions professionnelles, chambres, salons et solutions haut de gamme dans tout le Liban.",
     keywords:
-      "Everest Home, meubles Liban Sud, meubles sur mesure, design d'intérieur Liban, décor bois, chambres, salons, meubles de luxe Liban",
-    ogTitle: "Everest Home – Meubles & Design d'intérieur | Liban Sud",
+      "Everest Home, meubles Liban, meubles sur mesure Liban, design d'intérieur Liban, design d'intérieur Beyrouth, décor bois, chambres, salons, meubles de luxe Liban, meubles Beyrouth",
+    ogTitle: "Everest Home – Meubles & Design d'intérieur | Liban",
     ogDescription:
       "Des meubles et des intérieurs conçus sur mesure selon vos goûts, avec une fabrication locale de haute qualité au Liban Sud.",
     ogLocale: "fr_FR",
@@ -21,7 +21,7 @@ const dict = {
     cta: "Demander une consultation",
   },
   hero: {
-    badge: "Meubles & design d'intérieur au Liban Sud",
+    badge: "Meubles & design d'intérieur dans tout le Liban",
     titleTop: "Everest Home",
     titleAccent: "Furniture & Interior Design",
     subtitle:
