@@ -1,5 +1,7 @@
 import type { Dictionary, Locale } from "../i18n";
 
+const localeHref = (l: Locale) => (l === "ar" ? "/" : `/${l}/`);
+
 export default function Footer({
   dict,
   locale,
@@ -45,7 +47,7 @@ export default function Footer({
             {(["ar", "en", "fr"] as Locale[]).map((l) => (
               <a
                 key={l}
-                href={`/${l}/`}
+                href={localeHref(l)}
                 hrefLang={l === "ar" ? "ar-LB" : l}
                 className={`px-3 py-1.5 rounded-full border transition-colors ${
                   l === locale

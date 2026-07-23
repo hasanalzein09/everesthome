@@ -15,6 +15,8 @@ const localeLabels: Record<Locale, string> = {
   fr: "FR",
 };
 
+const localeHref = (l: Locale) => (l === "ar" ? "/" : `/${l}/`);
+
 export default function Header({ dict, locale }: HeaderProps) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -73,7 +75,7 @@ export default function Header({ dict, locale }: HeaderProps) {
               {(["ar", "en", "fr"] as Locale[]).map((l) => (
                 <a
                   key={l}
-                  href={`/${l}/`}
+                  href={localeHref(l)}
                   hrefLang={l === "ar" ? "ar-LB" : l}
                   className={`px-2.5 py-1 rounded-full text-xs font-semibold transition-colors ${
                     l === locale
@@ -120,7 +122,7 @@ export default function Header({ dict, locale }: HeaderProps) {
               {(["ar", "en", "fr"] as Locale[]).map((l) => (
                 <a
                   key={l}
-                  href={`/${l}/`}
+                  href={localeHref(l)}
                   hrefLang={l === "ar" ? "ar-LB" : l}
                   className={`px-3 py-1.5 rounded-full text-xs font-semibold border ${
                     l === locale

@@ -17,7 +17,7 @@
 
 ## Pages
 
-- Arabic: https://everesthome.pages.dev/ar/
+- Arabic (default): https://everesthome.pages.dev/
 - English: https://everesthome.pages.dev/en/
 - French: https://everesthome.pages.dev/fr/
 - Sitemap: https://everesthome.pages.dev/sitemap.xml

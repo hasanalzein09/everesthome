@@ -6,6 +6,9 @@ export const locales = ["ar", "en", "fr"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "ar";
 
+/** Locales served under /[locale] — Arabic lives at the root "/" */
+export const routeLocales = ["en", "fr"] as const;
+
 export type Dictionary = typeof ar;
 
 const dictionaries: Record<Locale, Dictionary> = { ar, en, fr };

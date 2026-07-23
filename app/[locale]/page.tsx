@@ -36,10 +36,10 @@ export async function generateMetadata({
     alternates: {
       canonical: `/${safeLocale}`,
       languages: {
-        "ar-LB": "/ar",
-        en: "/en",
-        fr: "/fr",
-        "x-default": "/ar",
+        "ar-LB": "/",
+        en: "/en/",
+        fr: "/fr/",
+        "x-default": "/",
       },
     },
     openGraph: {
