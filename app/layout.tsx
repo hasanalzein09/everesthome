@@ -11,7 +11,7 @@ const cairo = Cairo({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://everesthome.pages.dev"
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://everesthome-lb.com"
   ),
   title: "Everest Home – Furniture & Interior Design",
   description:

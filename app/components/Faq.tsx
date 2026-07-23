@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 
 export default function Faq({ dict, locale }: { dict: Dictionary; locale: Locale }) {
   const baseUrl =
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://everesthome.pages.dev";
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://everesthome-lb.com";
 
   const faqJsonLd = {
     "@context": "https://schema.org",

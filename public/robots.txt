@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://everesthome.pages.dev/sitemap.xml
+Sitemap: https://everesthome-lb.com/sitemap.xml

@@ -9,7 +9,7 @@ export default function BusinessJsonLd({
   locale: string;
 }) {
   const baseUrl =
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://everesthome.pages.dev";
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://everesthome-lb.com";
   const pageUrl = locale === "ar" ? baseUrl : `${baseUrl}/${locale}`;
 
   const localBusinessJsonLd = {

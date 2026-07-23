@@ -17,10 +17,10 @@
 
 ## Pages
 
-- Arabic (default): https://everesthome.pages.dev/
-- English: https://everesthome.pages.dev/en/
-- French: https://everesthome.pages.dev/fr/
-- Sitemap: https://everesthome.pages.dev/sitemap.xml
+- Arabic (default): https://everesthome-lb.com/
+- English: https://everesthome-lb.com/en/
+- French: https://everesthome-lb.com/fr/
+- Sitemap: https://everesthome-lb.com/sitemap.xml
 
 ## Services
 
