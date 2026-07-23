@@ -255,6 +255,18 @@ const dict = {
         q: "Où est l'atelier de meubles le plus proche ?",
         a: "L'atelier Everest Home est au Liban Sud, et nous intervenons dans tout le pays : visite chez vous, fabrication à l'atelier et installation à domicile — WhatsApp 03 371 324.",
       },
+      {
+        q: "Réalisez-vous des cuisines complètes ?",
+        a: "Oui, de la conception 3D à la pose : placards jusqu'au plafond, îlots centraux, plans marbre et quartz et éclairage dissimulé — avec une finition résistante à l'humidité qui dure.",
+      },
+      {
+        q: "Faites-vous le décor commercial des commerces et restaurants ?",
+        a: "Oui, décor commercial complet pour restaurants, cafés, commerces et bureaux : façades, comptoirs, assises — exécution rapide et respect de votre date d'ouverture.",
+      },
+      {
+        q: "Votre mobilier d'extérieur résiste-t-il à la pluie et au soleil ?",
+        a: "Oui, nous utilisons du bois traité et des finitions extérieures résistantes à l'humidité et au soleil pour les pergolas et salons d'extérieur, avec entretien et rénovation périodiques si besoin.",
+      },
     ],
   },
   contact: {

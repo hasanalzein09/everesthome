@@ -211,6 +211,66 @@ export const pseoSubServices: ServiceDef[] = [
       fr: ["Consoles d'entrée", "Miroirs décor à cadres en bois", "Meubles d'accueil et rangement clés", "Tables d'angle et d'appoint", "Éclairage d'entrée dissimulé", "Détails laiton et or"],
     },
   },
+  {
+    slug: "kitchens",
+    dictIndex: -1,
+    names: { ar: "مطابخ مخصصة", en: "Custom Kitchens", fr: "Cuisines sur mesure" },
+    intros: {
+      ar: "مطابخ مخصصة بتصميم عملي وفخم: خزائن حتى السقف، جزر وسطية، أسطح رخام وكوارتز، وتخزين ذكي — من التصميم ثلاثي الأبعاد حتى التركيب.",
+      en: "Custom kitchens with a practical, luxurious design: floor-to-ceiling cabinets, center islands, marble and quartz tops, and smart storage — from 3D design to installation.",
+      fr: "Des cuisines sur mesure au design pratique et luxueux : placards jusqu'au plafond, îlots centraux, plans marbre et quartz, rangements malins — de la 3D à la pose.",
+    },
+    items: {
+      ar: ["خزائن مطبخ حتى السقف", "جزر وطاولات وسطية", "أسطح رخام وكوارتز", "وحدات تخزين ذكية وسحابة", "إضاءة مخفية تحت الخزائن", "دهان وتشطيب مقاوم للرطوبة"],
+      en: ["Floor-to-ceiling kitchen cabinets", "Islands and breakfast bars", "Marble and quartz countertops", "Smart pull-out storage units", "Under-cabinet hidden lighting", "Moisture-resistant painting and finishing"],
+      fr: ["Placards jusqu'au plafond", "Îlots et bars", "Plans de travail marbre et quartz", "Rangements coulissants malins", "Éclairage dissimulé sous meubles", "Peinture et finition résistantes à l'humidité"],
+    },
+  },
+  {
+    slug: "outdoor-pergola",
+    dictIndex: -1,
+    names: { ar: "برغولا وأثاث خارجي", en: "Pergola & Outdoor Furniture", fr: "Pergola & Mobilier d'extérieur" },
+    intros: {
+      ar: "برغولا خشبية وجلسات خارجية تتحمل الشمس والشتاء: أثاث حدائق وتراسات بخشب معالج وتشطيبات خارجية تدوم لسنوات.",
+      en: "Wooden pergolas and outdoor lounges built for sun and rain: garden and terrace furniture in treated wood with finishes that last for years.",
+      fr: "Pergolas en bois et salons d'extérieur résistants au soleil et à la pluie : mobilier de jardin et de terrasse en bois traité avec des finitions durables.",
+    },
+    items: {
+      ar: ["برغولا خشبية للحديقة والتراس", "جلسات خارجية منجدة", "طاولات خارجية", "خشب معالج ضد الرطوبة", "مظلات وسواتر خشبية", "صيانة وتجديد الأثاث الخارجي"],
+      en: ["Wooden pergolas for garden and terrace", "Upholstered outdoor lounges", "Outdoor tables", "Moisture-treated wood", "Wooden shades and screens", "Outdoor furniture maintenance and renewal"],
+      fr: ["Pergolas en bois pour jardin et terrasse", "Salons d'extérieur capitonnés", "Tables d'extérieur", "Bois traité contre l'humidité", "Brise-soleil et claustras en bois", "Entretien et rénovation du mobilier extérieur"],
+    },
+  },
+  {
+    slug: "bathroom-vanities",
+    dictIndex: -1,
+    names: { ar: "خزائن حمام", en: "Bathroom Vanities", fr: "Meubles de salle de bain" },
+    intros: {
+      ar: "خزائن حمام مخصصة بتشطيبات مقاومة للرطوبة: وحدات مغسلة عائمة، مرايا بإضاءة، وتخزين عملي بتصميم فندقي.",
+      en: "Custom bathroom vanities with moisture-resistant finishes: floating sink units, lit mirrors, and practical storage with a hotel-style design.",
+      fr: "Des meubles de salle de bain sur mesure aux finitions résistantes à l'humidité : vasques flottantes, miroirs éclairés et rangements pratiques au design hôtelier.",
+    },
+    items: {
+      ar: ["وحدات مغسلة عائمة", "خزائن مقاومة للرطوبة", "مرايا بإضاءة LED", "أدراج منظمة", "أسطح رخام وكوارتز", "تصاميم سبا فندقية"],
+      en: ["Floating sink units", "Moisture-resistant cabinets", "LED-lit mirrors", "Organized drawers", "Marble and quartz tops", "Hotel spa-style designs"],
+      fr: ["Vasques flottantes", "Meubles résistants à l'humidité", "Miroirs à éclairage LED", "Tiroirs organisés", "Plans marbre et quartz", "Designs style spa hôtelier"],
+    },
+  },
+  {
+    slug: "commercial-decor",
+    dictIndex: -1,
+    names: { ar: "ديكور تجاري", en: "Commercial Decor", fr: "Décor commercial" },
+    intros: {
+      ar: "ديكور محلات تجارية ومطاعم وكافيهات: واجهات خشبية، كونتوارات، جلسات، وإضاءة — تنفيذ سريع بجودة تعكس برندك.",
+      en: "Decor for shops, restaurants and cafes: wooden fronts, counters, seating, and lighting — fast execution with quality that reflects your brand.",
+      fr: "Décor pour commerces, restaurants et cafés : façades en bois, comptoirs, assises et éclairage — exécution rapide avec une qualité qui reflète votre marque.",
+    },
+    items: {
+      ar: ["ديكور مطاعم وكافيهات", "واجهات محلات خشبية", "كونتوارات وبارات", "جلسات وطاولات تجارية", "ديكور مكاتب استقبال", "التزام كامل بمواعيد الافتتاح"],
+      en: ["Restaurant and cafe decor", "Wooden shop fronts", "Counters and bars", "Commercial seating and tables", "Reception office decor", "Full commitment to opening deadlines"],
+      fr: ["Décor restaurants et cafés", "Façades de magasins en bois", "Comptoirs et bars", "Assises et tables commerciales", "Décor d'accueils de bureaux", "Respect total des délais d'ouverture"],
+    },
+  },
 ];
 
 export const pseoCities: CityDef[] = [

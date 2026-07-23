@@ -17,6 +17,10 @@ const services = [
   "dining-buffet",
   "home-office",
   "entrance-console",
+  "kitchens",
+  "outdoor-pergola",
+  "bathroom-vanities",
+  "commercial-decor",
 ];
 const cities = [
   "south-lebanon",

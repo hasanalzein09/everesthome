@@ -255,6 +255,18 @@ const dict = {
         q: "Where is the nearest furniture workshop to me?",
         a: "The Everest Home workshop is in South Lebanon, and we reach every Lebanese region: site visit at your location, manufacturing in our workshop, and installation at your home — WhatsApp 03 371 324.",
       },
+      {
+        q: "Do you build complete kitchens?",
+        a: "Yes, from 3D design to installation: floor-to-ceiling cabinets, center islands, marble and quartz tops, and hidden lighting — with a moisture-resistant finish that lasts.",
+      },
+      {
+        q: "Do you do commercial decor for shops and restaurants?",
+        a: "Yes, complete commercial decor for restaurants, cafes, shops and offices: fronts, counters, seating — fast execution and commitment to your opening date.",
+      },
+      {
+        q: "Does your outdoor furniture withstand rain and sun?",
+        a: "Yes, we use treated wood and outdoor finishes resistant to moisture and sun for pergolas and outdoor lounges, with periodic maintenance and renewal when needed.",
+      },
     ],
   },
   contact: {

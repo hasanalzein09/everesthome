@@ -29,7 +29,7 @@ Each service has a dedicated page for every Lebanese region, in Arabic, English 
 Pattern: /p/<service>-<region>/ (Arabic), /en/<service>-<region>/ (English), /fr/<service>-<region>/ (French)
 Services: custom-furniture, wood-decor, painting-finishing, interior-design, bedrooms,
 sofas-salons, tables, wardrobes-storage, tv-wall-units, reupholstery, dining-buffet,
-home-office, entrance-console
+home-office, entrance-console, kitchens, outdoor-pergola, bathroom-vanities, commercial-decor
 Regions: south-lebanon, beirut, mount-lebanon, north-lebanon, bekaa, tyre, nabatieh, sidon,
 tripoli, jounieh, zahle, baalbek, akkar
 Example: https://everesthome-lb.com/p/custom-furniture-tyre/
@@ -62,6 +62,14 @@ Example: https://everesthome-lb.com/p/custom-furniture-tyre/
     office and company furniture.
 13. Entrance & Console Tables — entrance consoles, decor mirrors, reception and key storage,
     hidden lighting, brass and gold details.
+14. Custom Kitchens — floor-to-ceiling cabinets, islands, marble/quartz countertops,
+    pull-out storage, under-cabinet lighting, moisture-resistant finishes.
+15. Pergola & Outdoor Furniture — wooden pergolas, outdoor lounges and tables,
+    treated wood, weatherproof finishes, maintenance and renewal.
+16. Bathroom Vanities — floating sink units, moisture-resistant cabinets, LED mirrors,
+    marble/quartz tops, hotel spa-style designs.
+17. Commercial Decor — restaurants, cafes, shops and offices: fronts, counters, seating,
+    reception decor, commitment to opening deadlines.
 
 ## Occasions & Styles
 
