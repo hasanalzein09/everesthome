@@ -20,7 +20,15 @@
 - Arabic (default): https://everesthome-lb.com/
 - English: https://everesthome-lb.com/en/
 - French: https://everesthome-lb.com/fr/
-- Sitemap: https://everesthome-lb.com/sitemap.xml
+- Sitemap: https://everesthome-lb.com/sitemap.xml (99 URLs)
+
+## Localized Service Pages (per service per region)
+
+Each service has a dedicated page for every Lebanese region, in Arabic, English and French.
+Pattern: /p/<service>-<region>/ (Arabic), /en/<service>-<region>/ (English), /fr/<service>-<region>/ (French)
+Services: custom-furniture, wood-decor, painting-finishing, interior-design
+Regions: south-lebanon, beirut, mount-lebanon, north-lebanon, bekaa, tyre, nabatieh, sidon
+Example: https://everesthome-lb.com/p/custom-furniture-tyre/
 
 ## Services
 
