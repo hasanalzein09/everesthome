@@ -154,6 +154,73 @@ h1, h2, h3, h4 {
   font-weight: 700;
 }
 
+/* ---- Nav gold underline ---- */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  inset-inline-start: 0;
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--accent));
+  transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ---- Hero scroll hint ---- */
+@keyframes scrollHint {
+  0%, 100% { transform: translateY(0); opacity: 0.9; }
+  50% { transform: translateY(9px); opacity: 0.35; }
+}
+
+.scroll-hint {
+  animation: scrollHint 1.8s ease-in-out infinite;
+}
+
+/* ---- Spotlight hover (gold glow follows mouse) ---- */
+.spotlight {
+  position: relative;
+}
+
+.spotlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(
+    340px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(192, 160, 98, 0.16),
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+
+.spotlight:hover::before {
+  opacity: 1;
+}
+
+/* ---- Scroll progress bar ---- */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  inset-inline-start: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, var(--gold), var(--accent));
+  z-index: 60;
+  transition: width 0.08s linear;
+}
+
 /* ---- Custom scrollbar ---- */
 ::-webkit-scrollbar {
   width: 10px;

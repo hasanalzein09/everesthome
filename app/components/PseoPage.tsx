@@ -7,6 +7,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import CtaBand from "./CtaBand";
 import FloatingWhatsApp from "./FloatingWhatsApp";
+import ScrollProgress from "./ScrollProgress";
+import BackToTop from "./BackToTop";
 import Reveal from "./Reveal";
 
 interface PseoPageProps {
@@ -150,6 +152,7 @@ export default function PseoPage({
 
   return (
     <>
+      <ScrollProgress />
       <Header dict={dict} locale={locale} />
       <main>
         <section className="relative overflow-hidden bg-forest text-white py-16 lg:py-24">
@@ -303,6 +306,7 @@ export default function PseoPage({
       </main>
       <Footer dict={dict} locale={locale} />
       <FloatingWhatsApp label={dict.contact.whatsapp} />
+      <BackToTop />
 
       <script
         type="application/ld+json"

@@ -22,6 +22,8 @@ import CtaBand from "../components/CtaBand";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import FloatingWhatsApp from "../components/FloatingWhatsApp";
+import ScrollProgress from "../components/ScrollProgress";
+import BackToTop from "../components/BackToTop";
 
 export async function generateMetadata({
   params,
@@ -82,6 +84,7 @@ export default async function LocalePage({
 
   return (
     <>
+      <ScrollProgress />
       <Header dict={dict} locale={safeLocale} />
       <main>
         <Hero dict={dict} />
@@ -106,6 +109,7 @@ export default async function LocalePage({
       </main>
       <Footer dict={dict} locale={safeLocale} />
       <FloatingWhatsApp label={dict.contact.whatsapp} />
+      <BackToTop />
     </>
   );
 }

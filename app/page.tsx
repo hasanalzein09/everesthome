@@ -18,6 +18,8 @@ import CtaBand from "./components/CtaBand";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import ScrollProgress from "./components/ScrollProgress";
+import BackToTop from "./components/BackToTop";
 
 const dict = getDictionary("ar");
 
@@ -61,6 +63,7 @@ export default function HomePage() {
   return (
     <>
       <BusinessJsonLd dict={dict} locale="ar" />
+      <ScrollProgress />
       <Header dict={dict} locale="ar" />
       <main>
         <Hero dict={dict} />
@@ -85,6 +88,7 @@ export default function HomePage() {
       </main>
       <Footer dict={dict} locale="ar" />
       <FloatingWhatsApp label={dict.contact.whatsapp} />
+      <BackToTop />
     </>
   );
 }

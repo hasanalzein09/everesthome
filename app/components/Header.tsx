@@ -78,7 +78,7 @@ export default function Header({ dict, locale }: HeaderProps) {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-foreground/75 hover:text-accent transition-colors"
+                className="nav-link text-sm font-medium text-foreground/75 hover:text-accent transition-colors"
               >
                 {link.label}
               </a>

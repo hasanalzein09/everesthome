@@ -1,7 +1,8 @@
-import { ArrowDown, Phone } from "lucide-react";
+import { ArrowDown, Phone, ChevronDown } from "lucide-react";
 import type { Dictionary } from "../i18n";
 import HeroScene from "./HeroScene";
 import Reveal from "./Reveal";
+import CountUp from "./CountUp";
 
 export default function Hero({ dict }: { dict: Dictionary }) {
   return (
@@ -29,7 +30,7 @@ export default function Hero({ dict }: { dict: Dictionary }) {
                 <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#e5cd9a] to-gold-deep">
                   Home
                 </span>
-                <span className="block mt-4 text-white/60 text-xl sm:text-2xl lg:text-3xl font-normal tracking-wide">
+                <span className="block mt-4 text-white/60 text-xl sm:text-2xl lg:text-3xl font-normal tracking-wide italic">
                   {dict.hero.titleAccent}
                 </span>
               </h1>
@@ -70,9 +71,10 @@ export default function Hero({ dict }: { dict: Dictionary }) {
                       index > 0 ? "sm:border-s sm:border-gold/20" : ""
                     }`}
                   >
-                    <span className="block text-3xl sm:text-4xl font-bold text-gold">
-                      {stat.value}
-                    </span>
+                    <CountUp
+                      value={stat.value}
+                      className="block text-3xl sm:text-4xl font-bold text-gold"
+                    />
                     <span className="text-sm text-white/50">{stat.label}</span>
                   </div>
                 ))}
@@ -90,6 +92,12 @@ export default function Hero({ dict }: { dict: Dictionary }) {
             </div>
           </Reveal>
         </div>
+      </div>
+
+      <div className="absolute bottom-5 inset-x-0 hidden lg:flex justify-center pointer-events-none">
+        <span className="scroll-hint flex flex-col items-center gap-1 text-gold/60">
+          <ChevronDown size={20} />
+        </span>
       </div>
     </section>
   );

@@ -21,6 +21,9 @@ export default function Gallery({ dict }: { dict: Dictionary }) {
             return (
               <Reveal key={label} delay={index * 70}>
                 <div className="card-lift group relative aspect-[4/3] arch-sm overflow-hidden bg-gradient-to-br from-[#d8cbb8] to-[#c3b199] flex items-center justify-center border border-gold/25">
+                  <span className="absolute top-4 start-4 z-10 px-3 py-1 rounded-full bg-espresso/80 text-gold text-xs font-bold backdrop-blur">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
                   <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.7)_0,transparent_50%)]" />
                   <div className="relative flex flex-col items-center text-foreground/50 group-hover:text-accent transition-colors px-4 text-center">
                     {isVideo ? <Play size={38} /> : <ImageIcon size={38} />}

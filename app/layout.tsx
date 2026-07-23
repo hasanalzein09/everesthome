@@ -13,6 +13,7 @@ const amiri = Amiri({
   variable: "--font-amiri",
   subsets: ["arabic", "latin"],
   weight: ["400", "700"],
+  style: ["normal", "italic"],
 });
 
 const marcellus = Marcellus({

@@ -1,6 +1,7 @@
 import type { Dictionary } from "../i18n";
 import SectionTitle from "./SectionTitle";
 import Reveal from "./Reveal";
+import Spotlight from "./Spotlight";
 
 export default function Services({ dict }: { dict: Dictionary }) {
   return (
@@ -23,6 +24,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
                 delay={index * 90}
                 className={featured ? "lg:col-span-2" : ""}
               >
+                <Spotlight className="h-full rounded-[2rem]">
                 <article
                   id={`service-${index + 1}`}
                   className={`card-lift relative h-full rounded-[2rem] p-7 lg:p-9 shadow-sm border overflow-hidden ${
@@ -83,6 +85,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
                     ))}
                   </ul>
                 </article>
+              </Spotlight>
               </Reveal>
             );
           })}
