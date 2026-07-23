@@ -8,6 +8,7 @@ import About from "./components/About";
 import QuickFacts from "./components/QuickFacts";
 import Services from "./components/Services";
 import WhyUs from "./components/WhyUs";
+import MaterialsGuide from "./components/MaterialsGuide";
 import Projects from "./components/Projects";
 import Process from "./components/Process";
 import Gallery from "./components/Gallery";
@@ -73,6 +74,7 @@ export default function HomePage() {
         <QuickFacts dict={dict} locale="ar" />
         <Services dict={dict} />
         <WhyUs dict={dict} />
+        <MaterialsGuide locale="ar" />
         <Projects dict={dict} />
         <Process dict={dict} />
         <Gallery dict={dict} />

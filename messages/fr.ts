@@ -4,7 +4,7 @@ const dict = {
     description:
       "Everest Home propose des meubles sur mesure, du design d'intérieur, des décorations en bois, de la peinture et des finitions professionnelles, chambres, salons et solutions haut de gamme dans tout le Liban.",
     keywords:
-      "Everest Home, meubles Liban, meubles sur mesure Liban, design d'intérieur Liban, design d'intérieur Beyrouth, décor bois, chambres, salons, meubles de luxe Liban, meubles Beyrouth",
+      "Everest Home, meubles Liban, meubles sur mesure Liban, design d'intérieur Liban, design d'intérieur Beyrouth, décor bois, chambres, salons, meubles de luxe Liban, meubles Beyrouth, menuiserie sur mesure Liban, tapisserie meubles, bois hêtre, tissus canapé, mur TV Liban, dressing Liban",
     ogTitle: "Everest Home – Meubles & Design d'intérieur | Liban",
     ogDescription:
       "Des meubles et des intérieurs conçus sur mesure selon vos goûts, avec une fabrication locale de haute qualité au Liban Sud.",
@@ -218,6 +218,22 @@ const dict = {
       {
         q: "Faites-vous des chambres d'enfants ?",
         a: "Oui, nous concevons et réalisons des chambres d'enfants pratiques et sûres, avec des matériaux sains et des rangements malins adaptés à la pièce et à l'âge de l'enfant.",
+      },
+      {
+        q: "Que choisir : hêtre ou MDF ?",
+        a: "Le hêtre est plus solide et durable pour les structures, chaises, tables et lits, tandis que le MDF est idéal pour les surfaces peintes, le CNC et les grands dressings. Nous choisissons le bon matériau selon la pièce et votre budget — sans compromettre la qualité.",
+      },
+      {
+        q: "Quel est le meilleur tissu pour un canapé ?",
+        a: "Pour les familles et l'usage quotidien : tissus anti-taches ou cuir pratique. Pour le luxe : velours ou la tendance bouclé 2026. Pour un style naturel : le lin. Nous apportons des échantillons et les testons avec vous avant de décider.",
+      },
+      {
+        q: "Que signifie un meuble sur mesure ?",
+        a: "Chaque pièce est fabriquée à partir de zéro selon votre espace et vos goûts : nous choisissons ensemble le bois, le tissu, la couleur et les détails, pour utiliser 100% de votre espace avec un design unique — contrairement aux meubles standards aux dimensions fixes.",
+      },
+      {
+        q: "Travaillez-vous le placage naturel ?",
+        a: "Oui, nous travaillons tous les types de placage naturel pour des façades et portes haut de gamme — l'aspect du bois noble à moindre coût que le massif.",
       },
     ],
   },

@@ -4,7 +4,7 @@ const dict = {
     description:
       "Everest Home offers custom furniture, interior design, wooden decorations, professional painting and finishing, bedrooms, living rooms and luxury home solutions across Lebanon.",
     keywords:
-      "Everest Home, furniture Lebanon, custom furniture Lebanon, interior design Lebanon, interior design Beirut, wood decor Lebanon, bedrooms, living rooms, luxury furniture Lebanon, furniture Beirut",
+      "Everest Home, furniture Lebanon, custom furniture Lebanon, interior design Lebanon, interior design Beirut, wood decor Lebanon, bedrooms, living rooms, luxury furniture Lebanon, furniture Beirut, custom carpentry Lebanon, furniture upholstery Lebanon, beech wood furniture, sofa fabrics, TV wall Lebanon, wardrobes Lebanon",
     ogTitle: "Everest Home – Furniture & Interior Design | Lebanon",
     ogDescription:
       "Custom-made furniture and interior design crafted to match your taste, with high-quality local manufacturing in South Lebanon.",
@@ -218,6 +218,22 @@ const dict = {
       {
         q: "Do you make kids' bedrooms?",
         a: "Yes, we design and build practical and safe kids' bedrooms with healthy materials and smart storage suited to the room and the child's age.",
+      },
+      {
+        q: "Which is better: beech wood or MDF?",
+        a: "Beech is stronger and longer-lasting for frames, chairs, tables and beds, while MDF is ideal for painted surfaces, CNC designs and large wardrobes. We choose the right material for each piece and your budget — without compromising quality.",
+      },
+      {
+        q: "What is the best fabric for a sofa?",
+        a: "For families and daily use: stain-resistant fabrics or practical leather. For luxury: velvet or the 2026 bouclé trend. For a natural look: linen. We bring fabric samples and test them with you before you decide.",
+      },
+      {
+        q: "What does custom-made furniture mean?",
+        a: "It means every piece is built from scratch to your space and taste: we choose the wood, fabric, color and details together, so you use 100% of your space and get a design nobody else has — unlike ready-made furniture with fixed sizes and colors.",
+      },
+      {
+        q: "Do you work with natural veneer?",
+        a: "Yes, we work with all types of natural veneer for luxury fronts and doors — the look of real wood at a lower cost than full solid wood.",
       },
     ],
   },
