@@ -267,6 +267,14 @@ const dict = {
         q: "Votre mobilier d'extérieur résiste-t-il à la pluie et au soleil ?",
         a: "Oui, nous utilisons du bois traité et des finitions extérieures résistantes à l'humidité et au soleil pour les pergolas et salons d'extérieur, avec entretien et rénovation périodiques si besoin.",
       },
+      {
+        q: "Réalisez-vous des moucharabiehs et du décor oriental ?",
+        a: "Oui, nous réalisons moucharabiehs, sculptures arabes CNC, claustras orientaux et incrustations de laiton et nacre — un patrimoine authentique avec une touche moderne pour entrées, majlis et murs.",
+      },
+      {
+        q: "Fabriquez-vous des portes en bois sur mesure ?",
+        a: "Oui, nous fabriquons portes d'entrée luxueuses, portes de chambres, coulissantes et invisibles en bois durables, avec isolation phonique et finitions à votre goût.",
+      },
     ],
   },
   contact: {

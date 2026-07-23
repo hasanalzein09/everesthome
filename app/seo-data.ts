@@ -271,6 +271,36 @@ export const pseoSubServices: ServiceDef[] = [
       fr: ["Décor restaurants et cafés", "Façades de magasins en bois", "Comptoirs et bars", "Assises et tables commerciales", "Décor d'accueils de bureaux", "Respect total des délais d'ouverture"],
     },
   },
+  {
+    slug: "oriental-woodwork",
+    dictIndex: -1,
+    names: { ar: "مشربية وديكور شرقي", en: "Mashrabiya & Oriental Woodwork", fr: "Moucharabieh & Décor oriental" },
+    intros: {
+      ar: "مشربية وديكور شرقي أصيل بلمسة عصرية: نحت عربي CNC، فواصل مشربية، وتطعيمات خشبية فاخرة تجمع التراث اللبناني بالفخامة.",
+      en: "Authentic mashrabiya and oriental decor with a modern touch: CNC arabesque carving, mashrabiya partitions, and luxury wood inlays blending Lebanese heritage with elegance.",
+      fr: "Moucharabieh authentique et décor oriental avec une touche moderne : sculpture arabe CNC, claustras et incrustations de luxe alliant le patrimoine libanais au raffinement.",
+    },
+    items: {
+      ar: ["فواصل مشربية", "نحت عربي CNC", "ديكور شرقي للمداخل والمجالس", "تطعيم نحاس وصدف", "ألواح شرقية للجدران", "تصاميم تراثية بروح عصرية"],
+      en: ["Mashrabiya partitions", "CNC arabesque carving", "Oriental decor for entrances and majlis", "Brass and mother-of-pearl inlay", "Oriental wall panels", "Heritage designs with a modern spirit"],
+      fr: ["Claustras moucharabieh", "Sculpture arabe CNC", "Décor oriental pour entrées et majlis", "Incrustation laiton et nacre", "Panneaux muraux orientaux", "Designs patrimoniaux à l'esprit moderne"],
+    },
+  },
+  {
+    slug: "wooden-doors",
+    dictIndex: -1,
+    names: { ar: "أبواب خشبية", en: "Wooden Doors", fr: "Portes en bois" },
+    intros: {
+      ar: "أبواب خشبية مخصصة لكل بيت: أبواب رئيسية فخمة، أبواب غرف، سحابة ومفصلية — بخشب متين وتشطيب يتحمل الاستخدام اليومي.",
+      en: "Custom wooden doors for every home: luxury main doors, room doors, sliding and hinged — solid wood with a finish built for daily use.",
+      fr: "Portes en bois sur mesure pour chaque maison : portes d'entrée luxueuses, portes de chambres, coulissantes et battantes — bois massif et finition durable.",
+    },
+    items: {
+      ar: ["أبواب رئيسية فخمة", "أبواب غرف داخلية", "أبواب سحابة (سلايدينغ)", "أبواب مخفية بجدران", "فواصل خشبية", "عزل صوت وتشطيبات متنوعة"],
+      en: ["Luxury main doors", "Interior room doors", "Sliding doors", "Hidden wall-integrated doors", "Wooden partitions", "Sound insulation and varied finishes"],
+      fr: ["Portes d'entrée luxueuses", "Portes de chambres", "Portes coulissantes", "Portes invisibles intégrées", "Cloisons en bois", "Isolation phonique et finitions variées"],
+    },
+  },
 ];
 
 export const pseoCities: CityDef[] = [

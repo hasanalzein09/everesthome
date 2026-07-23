@@ -267,6 +267,14 @@ const dict = {
         q: "Does your outdoor furniture withstand rain and sun?",
         a: "Yes, we use treated wood and outdoor finishes resistant to moisture and sun for pergolas and outdoor lounges, with periodic maintenance and renewal when needed.",
       },
+      {
+        q: "Do you make mashrabiya and oriental woodwork?",
+        a: "Yes, we craft mashrabiya, CNC arabesque carving, oriental partitions, and brass and mother-of-pearl inlay — authentic heritage with a modern touch for entrances, majlis and walls.",
+      },
+      {
+        q: "Do you make custom wooden doors?",
+        a: "Yes, we make luxury main doors, room doors, sliding and hidden doors in durable woods with sound insulation and finishes to your taste.",
+      },
     ],
   },
   contact: {

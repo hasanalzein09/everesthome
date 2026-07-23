@@ -21,6 +21,8 @@ const services = [
   "outdoor-pergola",
   "bathroom-vanities",
   "commercial-decor",
+  "oriental-woodwork",
+  "wooden-doors",
 ];
 const cities = [
   "south-lebanon",
