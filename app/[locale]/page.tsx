@@ -15,6 +15,7 @@ import Projects from "../components/Projects";
 import Process from "../components/Process";
 import Gallery from "../components/Gallery";
 import Faq from "../components/Faq";
+import PseoLinks from "../components/PseoLinks";
 import CtaBand from "../components/CtaBand";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -95,6 +96,7 @@ export default async function LocalePage({
         <Process dict={dict} />
         <Gallery dict={dict} />
         <Faq dict={dict} locale={safeLocale} />
+        <PseoLinks locale={safeLocale} />
         <CtaBand dict={dict} />
         <Contact dict={dict} />
       </main>
