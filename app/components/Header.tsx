@@ -33,7 +33,6 @@ export default function Header({ dict, locale }: HeaderProps) {
     { href: "#about", label: dict.nav.about },
     { href: "#services", label: dict.nav.services },
     { href: "#projects", label: dict.nav.projects },
-    { href: "#gallery", label: dict.nav.gallery },
     { href: "#faq", label: dict.nav.faq },
     { href: "#contact", label: dict.nav.contact },
   ];

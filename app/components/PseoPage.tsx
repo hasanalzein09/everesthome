@@ -17,6 +17,7 @@ interface PseoPageProps {
   service: ServiceDef;
   city: CityDef;
   otherServices: { slug: string; name: string }[];
+  otherCities: { slug: string; name: string }[];
 }
 
 const whyLocal: Record<Locale, string[]> = {
@@ -43,12 +44,19 @@ const otherServicesTitle: Record<Locale, string> = {
   fr: "Autres services à",
 };
 
+const otherCitiesTitle: Record<Locale, string> = {
+  ar: "في مناطق أخرى",
+  en: "in other regions",
+  fr: "dans d'autres régions",
+};
+
 export default function PseoPage({
   dict,
   locale,
   service,
   city,
   otherServices,
+  otherCities,
 }: PseoPageProps) {
   const baseUrl =
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://everesthome-lb.com";
@@ -78,10 +86,10 @@ export default function PseoPage({
             : `Intervenez-vous à ${cityName} ?`,
       a:
         locale === "ar"
-          ? `نعم، ننفذ مشاريع في ${cityName} وكل لبنان: معاينة، تصنيع، تسليم وتركيب — كل شيء من ورشتنا مباشرة إلى موقعك.`
+          ? `نعم، ننفذ مشاريع في ${cityName} وكل لبنان: معاينة، تصنيع، تسليم وتركيب — كل شيء من معملنا مباشرة إلى موقعك.`
           : locale === "en"
-            ? `Yes, we deliver projects in ${cityName} and all of Lebanon: site visit, manufacturing, delivery and installation — everything from our workshop to your location.`
-            : `Oui, nous réalisons des projets à ${cityName} et dans tout le Liban : visite, fabrication, livraison et installation — directement de notre atelier à votre adresse.`,
+            ? `Yes, we deliver projects in ${cityName} and all of Lebanon: site visit, manufacturing, delivery and installation — everything from our factory to your location.`
+            : `Oui, nous réalisons des projets à ${cityName} et dans tout le Liban : visite, fabrication, livraison et installation — directement de notre usine à votre adresse.`,
     },
     {
       q:
@@ -108,7 +116,7 @@ export default function PseoPage({
         locale === "ar"
           ? "معظم المشاريع تستغرق بين 3 و6 أسابيع من اعتماد التصميم حتى التركيب النهائي، مع تحديثات مستمرة وصور من المعمل."
           : locale === "en"
-            ? "Most projects take 3 to 6 weeks from design approval to final installation, with continuous updates and workshop photos."
+            ? "Most projects take 3 to 6 weeks from design approval to final installation, with continuous updates and photos from our factory."
             : "La plupart des projets prennent 3 à 6 semaines, de la validation du design à l'installation, avec des mises à jour régulières.",
     },
   ];
@@ -264,6 +272,20 @@ export default function PseoPage({
                         key={other.slug}
                         href={`${prefix}/${other.slug}/`}
                         className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold hover:bg-accent hover:text-white transition-colors"
+                      >
+                        {other.name}
+                      </a>
+                    ))}
+                  </div>
+                  <h2 className="text-lg font-extrabold text-foreground mt-7 mb-4">
+                    {serviceName} {otherCitiesTitle[locale]}
+                  </h2>
+                  <div className="flex flex-wrap gap-2.5">
+                    {otherCities.map((other) => (
+                      <a
+                        key={other.slug}
+                        href={`${prefix}/${other.slug}/`}
+                        className="px-4 py-2 rounded-full bg-foreground/5 text-foreground/70 text-sm font-semibold hover:bg-accent hover:text-white transition-colors"
                       >
                         {other.name}
                       </a>

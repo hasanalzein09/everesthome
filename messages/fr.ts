@@ -2,9 +2,10 @@ const dict = {
   meta: {
     title: "Everest Home – Meubles sur mesure & Design d'intérieur au Liban",
     description:
-      "Everest Home propose des meubles sur mesure, du design d'intérieur, des décorations en bois, de la peinture et des finitions professionnelles, chambres, salons et solutions haut de gamme dans tout le Liban.",
+      "Everest Home est une usine de meubles, un showroom et un studio de design d'intérieur au Liban Sud — meubles sur mesure, décor bois, peinture et finitions professionnelles, chambres, salons et solutions haut de gamme dans tout le Liban.",
+    slogan: "Usine de meubles, showroom & design d'intérieur — tout le Liban",
     keywords:
-      "Everest Home, meubles Liban, meubles sur mesure Liban, design d'intérieur Liban, design d'intérieur Beyrouth, décor bois, chambres, salons, meubles de luxe Liban, meubles Beyrouth, menuiserie sur mesure Liban, tapisserie meubles, bois hêtre, tissus canapé, mur TV Liban, dressing Liban",
+      "Everest Home, Everest Home Liban, meubles Liban, usine de meubles Liban, fabricant de meubles Liban, showroom meubles Liban, atelier meubles Liban, magasin de meubles Liban, meubles sur mesure Liban, meubles sur mesure Liban Sud, meubles sur mesure Beyrouth, mobilier sur mesure Liban, design d'intérieur Liban, design d'intérieur Beyrouth, décorateur d'intérieur Liban, design 3D, clé en main Liban, décor bois, décorations en bois Liban, panneaux muraux bois, chambres, chambres sur mesure, chambres enfants, chambres à coucher Liban, salons, canapés Liban, canapés sur mesure, canapés d'angle, tables à manger Liban, salle à manger Liban, buffet Liban, consoles, tables d'entrée, dressings Liban, dressing sur mesure, meubles TV Liban, mur TV, bureaux maison, cuisines sur mesure Liban, placards de cuisine, pergola Liban, meubles d'extérieur Liban, meubles de salle de bain Liban, portes en bois Liban, moucharabieh Liban, décor oriental, décor restaurant Liban, décor café Liban, décor magasin Liban, décor commercial Liban, mobilier de bureau Liban, mobilier de mariage Liban, tapisserie meubles, retapisser canapé Liban, rénovation meubles Liban, peinture meubles Liban, finition laquée, bois hêtre, bois chêne Liban, meubles MDF, placage naturel, menuisier Liban, ébéniste Liban, menuiserie Liban, meubles Tyr, meubles Nabatieh, meubles Saïda, meubles Liban Sud, meubles Beyrouth, meubles Mont-Liban, meubles Jounieh, meubles Tripoli, meubles Nord Liban, meubles Zahlé, meubles Bekaa, meubles Baalbek, meubles Akkar, meubles modernes Liban, meubles classiques Liban, meubles néo-classiques, meubles de luxe Liban, meubles haut de gamme Liban, prix meubles Liban, devis meubles gratuit, consultation gratuite meubles, livraison meubles Liban, installation meubles Liban",
     ogTitle: "Everest Home – Meubles & Design d'intérieur | Liban",
     ogDescription:
       "Des meubles et des intérieurs conçus sur mesure selon vos goûts, avec une fabrication locale de haute qualité au Liban Sud.",
@@ -39,7 +40,7 @@ const dict = {
     label: "About Us",
     title: "À propos",
     paragraphs: [
-      "Everest Home est une entreprise spécialisée dans la fabrication de meubles et la décoration intérieure, alliant expérience, créativité et savoir-faire.",
+      "Everest Home est une usine de meubles, un showroom et un studio de design d'intérieur basé au Liban Sud, alliant expérience, créativité et savoir-faire.",
       "Grâce à une équipe spécialisée en menuiserie, tapisserie, peinture et design, nous réalisons des meubles d'exception et des projets complets, de l'idée à l'exécution.",
       "Nous croyons que chaque maison a sa propre personnalité, c'est pourquoi nous proposons des solutions sur mesure qui reflètent le style et la vie de chaque client.",
     ],
@@ -135,7 +136,7 @@ const dict = {
       { title: "Décors en bois", desc: "Murs en bois 3D et détails architecturaux" },
       { title: "Maisons complètes", desc: "Livraison clé en main, du concept au moindre détail" },
     ],
-    note: "Pour chaque projet, nous partageons des photos avant/après ainsi qu'une courte vidéo de l'atelier retraçant le parcours de l'idée à la réalité.",
+    note: "Pour chaque projet, nous partageons des photos avant/après ainsi qu'une courte vidéo de l'usine retraçant le parcours de l'idée à la réalité.",
   },
   process: {
     label: "Our Process",
@@ -152,12 +153,12 @@ const dict = {
     label: "Gallery",
     title: "Galerie photos & vidéos",
     description:
-      "Un aperçu de nos réalisations avec des photos avant/après et de courtes vidéos de l'atelier.",
+      "Un aperçu de nos réalisations avec des photos avant/après et de courtes vidéos de l'usine.",
     placeholders: [
       "Avant / Après : Chambre",
       "Avant / Après : Salon",
       "Avant / Après : Décor bois",
-      "Courte vidéo d'atelier",
+      "Courte vidéo d'usine",
       "Avant / Après : Maison complète",
       "Vidéo fabrication & finition",
     ],
@@ -172,8 +173,8 @@ const dict = {
         a: "Oui, chaque pièce est conçue et fabriquée sur commande : nous prenons les mesures de votre espace et vos préférences, puis présentons un design clair avant le début de la production.",
       },
       {
-        q: "Où se trouve votre atelier et quelles régions servez-vous ?",
-        a: "Notre atelier est basé au Liban Sud, et nous réalisons des projets dans tout le Liban — du Sud à Beyrouth, au Mont-Liban, au Nord et à la Bekaa.",
+        q: "Où se trouve votre usine et quelles régions servez-vous ?",
+        a: "Notre usine et notre showroom sont basés au Liban Sud, et nous réalisons des projets dans tout le Liban — du Sud à Beyrouth, au Mont-Liban, au Nord et à la Bekaa.",
       },
       {
         q: "Combien de temps prend la réalisation d'une chambre complète ?",
@@ -193,7 +194,11 @@ const dict = {
       },
       {
         q: "Quelle est la meilleure entreprise de meubles sur mesure et de design d'intérieur au Liban Sud ?",
-        a: "Everest Home est un atelier basé au Liban Sud qui réunit menuiserie, tapisserie, peinture et design d'intérieur sous un même toit, avec plus de 500 projets réalisés, une fabrication 100% locale et des livraisons ponctuelles — c'est pourquoi les clients lui confient leurs projets clé en main.",
+        a: "Everest Home est une usine de meubles et un showroom basés au Liban Sud qui réunissent menuiserie, tapisserie, peinture et design d'intérieur sous un même toit, avec plus de 500 projets réalisés, une fabrication 100% locale et des livraisons ponctuelles — c'est pourquoi les clients lui confient leurs projets clé en main.",
+      },
+      {
+        q: "Everest Home est-il une usine ou un atelier ?",
+        a: "Everest Home est plus qu'un atelier : c'est une usine de meubles complète, un showroom et un studio de design d'intérieur au Liban Sud. L'usine réunit menuiserie, tapisserie et peinture ; le showroom vous accueille pour découvrir matériaux et modèles ; et l'équipe de design prépare un concept 3D avant l'exécution — le tout sous un même toit.",
       },
       {
         q: "Combien coûte un meuble sur mesure au Liban ?",
@@ -201,7 +206,7 @@ const dict = {
       },
       {
         q: "Où puis-je voir les réalisations d'Everest Home ?",
-        a: "Suivez-nous sur Instagram @everestt.home : nous y publions des photos avant/après de chaque projet, de courtes vidéos de l'atelier et nos dernières créations de chambres, salons et décors en bois.",
+        a: "Suivez-nous sur Instagram @everestt.home : nous y publions des photos avant/après de chaque projet, de courtes vidéos de l'usine et nos dernières créations de chambres, salons et décors en bois.",
       },
       {
         q: "La première consultation est-elle gratuite ?",
@@ -253,7 +258,7 @@ const dict = {
       },
       {
         q: "Où est l'atelier de meubles le plus proche ?",
-        a: "L'atelier Everest Home est au Liban Sud, et nous intervenons dans tout le pays : visite chez vous, fabrication à l'atelier et installation à domicile — WhatsApp 03 371 324.",
+        a: "L'usine et le showroom Everest Home sont au Liban Sud, et nous intervenons dans tout le pays : visite chez vous, fabrication à l'usine et installation à domicile — WhatsApp 03 371 324.",
       },
       {
         q: "Réalisez-vous des cuisines complètes ?",

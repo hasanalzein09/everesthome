@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary } from "../../i18n";
-import { allPseoServices, pseoCombos, parseCombo } from "../../seo-data";
+import { allPseoServices, pseoCombos, pseoCities, parseCombo, pseoKeywords } from "../../seo-data";
 import PseoPage from "../../components/PseoPage";
 import BusinessJsonLd from "../../components/BusinessJsonLd";
 
@@ -29,6 +29,7 @@ export async function generateMetadata({
   return {
     title,
     description,
+    keywords: pseoKeywords(service, city, "ar"),
     alternates: {
       canonical: `/p/${combo}/`,
       languages: {
@@ -67,6 +68,9 @@ export default async function ArabicComboPage({
   const otherServices = allPseoServices
     .filter((s) => s.slug !== service.slug)
     .map((s) => ({ slug: `${s.slug}-${city.slug}`, name: s.names.ar }));
+  const otherCities = pseoCities
+    .filter((c) => c.slug !== city.slug)
+    .map((c) => ({ slug: `${service.slug}-${c.slug}`, name: c.names.ar }));
 
   return (
     <>
@@ -77,6 +81,7 @@ export default async function ArabicComboPage({
         service={service}
         city={city}
         otherServices={otherServices}
+        otherCities={otherCities}
       />
     </>
   );

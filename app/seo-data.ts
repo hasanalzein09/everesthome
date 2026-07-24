@@ -308,9 +308,9 @@ export const pseoCities: CityDef[] = [
     slug: "south-lebanon",
     names: { ar: "جنوب لبنان", en: "South Lebanon", fr: "Liban Sud" },
     blurbs: {
-      ar: "ورشتنا في الجنوب — نوصل بسرعة إلى أي منطقة من صور إلى النبطية، ونعرف ذوق البيوت الجنوبية ومتطلباتها.",
-      en: "Our workshop is in the South — we reach any area from Tyre to Nabatieh quickly, and we know the taste and needs of southern homes.",
-      fr: "Notre atelier est dans le Sud — nous intervenons rapidement de Tyr à Nabatieh, et connaissons le goût des maisons du sud.",
+      ar: "معملنا في الجنوب — نوصل بسرعة إلى أي منطقة من صور إلى النبطية، ونعرف ذوق البيوت الجنوبية ومتطلباتها.",
+      en: "Our factory is in the South — we reach any area from Tyre to Nabatieh quickly, and we know the taste and needs of southern homes.",
+      fr: "Notre usine est dans le Sud — nous intervenons rapidement de Tyr à Nabatieh, et connaissons le goût des maisons du sud.",
     },
   },
   {
@@ -353,9 +353,9 @@ export const pseoCities: CityDef[] = [
     slug: "tyre",
     names: { ar: "صور", en: "Tyre", fr: "Tyr" },
     blurbs: {
-      ar: "صور منطقتنا الأساسية — المعاينة خلال يوم، والتنفيذ من ورشتنا القريبة مباشرة إلى بيتك.",
-      en: "Tyre is our home base — site visits within a day, and execution delivered straight from our nearby workshop to your home.",
-      fr: "Tyr est notre base — visite sous 24h et réalisation livrée directement de notre atelier voisin à votre domicile.",
+      ar: "صور منطقتنا الأساسية — المعاينة خلال يوم، والتنفيذ من معملنا القريب مباشرة إلى بيتك.",
+      en: "Tyre is our home base — site visits within a day, and execution delivered straight from our nearby factory to your home.",
+      fr: "Tyr est notre base — visite sous 24h et réalisation livrée directement de notre usine voisine à votre domicile.",
     },
   },
   {
@@ -371,17 +371,17 @@ export const pseoCities: CityDef[] = [
     slug: "sidon",
     names: { ar: "صيدا", en: "Sidon", fr: "Saïda" },
     blurbs: {
-      ar: "صيدا والساحل الجنوبي — نصل إليك بسرعة من ورشتنا، مع خبرة طويلة بمشاريع البيوت الصيداوية.",
-      en: "Sidon and the southern coast — we reach you quickly from our workshop, with long experience in Saida home projects.",
-      fr: "Saïda et la côte sud — nous arrivons vite depuis notre atelier, avec une longue expérience des maisons de Saïda.",
+      ar: "صيدا والساحل الجنوبي — نصل إليك بسرعة من معملنا، مع خبرة طويلة بمشاريع البيوت الصيداوية.",
+      en: "Sidon and the southern coast — we reach you quickly from our factory, with long experience in Saida home projects.",
+      fr: "Saïda et la côte sud — nous arrivons vite depuis notre usine, avec une longue expérience des maisons de Saïda.",
     },
   },
   {
     slug: "tripoli",
     names: { ar: "طرابلس", en: "Tripoli", fr: "Tripoli" },
     blurbs: {
-      ar: "طرابلس والميناء وكل الفيحاء — ننفذ مشاريع مفروشات وديكور بجودة ورشتنا نفسها مع تنسيق كامل للمواعيد.",
-      en: "Tripoli, Mina and the whole North coast — we deliver furniture and decor projects with the same workshop quality and fully coordinated scheduling.",
+      ar: "طرابلس والميناء وكل الفيحاء — ننفذ مشاريع مفروشات وديكور بجودة معملنا نفسها مع تنسيق كامل للمواعيد.",
+      en: "Tripoli, Mina and the whole North coast — we deliver furniture and decor projects with the same factory quality and fully coordinated scheduling.",
       fr: "Tripoli, Mina et toute la côte nord — mêmes projets de qualité avec une coordination complète des rendez-vous.",
     },
   },
@@ -430,6 +430,41 @@ export interface Combo {
 }
 
 export const allPseoServices: ServiceDef[] = [...pseoServices, ...pseoSubServices];
+
+/** Modifiers combined with every service+city to generate per-page keywords.
+ * `pre` goes before the service name, `post` after it (natural phrasing per locale). */
+const kwModifiers: Record<Locale, { pre: string[]; post: string[] }> = {
+  ar: {
+    pre: ["معمل", "ورشة", "تفصيل", "تصنيع", "شركة", "أفضل", "أسعار", "صالة عرض"],
+    post: [],
+  },
+  en: {
+    pre: ["best", "custom", "luxury", "affordable"],
+    post: ["factory", "workshop", "showroom", "company", "manufacturer", "prices", "cost", "design"],
+  },
+  fr: {
+    pre: ["meilleurs", "prix", "usine de", "atelier de", "fabricant de", "entreprise de"],
+    post: ["showroom", "sur mesure", "haut de gamme", "devis"],
+  },
+};
+
+/** Per-page keyword set for a service+city combo (hidden meta keywords, 3 locales) */
+export function pseoKeywords(
+  service: ServiceDef,
+  city: CityDef,
+  locale: Locale,
+): string[] {
+  const s = service.names[locale];
+  const sLower = locale === "en" ? s.toLowerCase() : s.charAt(0).toLowerCase() + s.slice(1);
+  const c = city.names[locale];
+  const inCity = locale === "ar" ? `في ${c}` : locale === "fr" ? `à ${c}` : `in ${c}`;
+  const kws = [`${s} ${inCity}`, `Everest Home ${s}`, `Everest Home ${inCity}`];
+  const mods = kwModifiers[locale];
+  const has = (m: string) => sLower.toLowerCase().includes(m.trim().toLowerCase());
+  for (const m of mods.pre) if (!has(m)) kws.push(`${m} ${sLower} ${inCity}`);
+  for (const m of mods.post) if (!has(m)) kws.push(`${sLower} ${m} ${inCity}`);
+  return kws;
+}
 
 export const pseoCombos: Combo[] = allPseoServices.flatMap((service) =>
   pseoCities.map((city) => ({

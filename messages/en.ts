@@ -2,9 +2,10 @@ const dict = {
   meta: {
     title: "Everest Home – Custom Furniture & Interior Design in Lebanon",
     description:
-      "Everest Home offers custom furniture, interior design, wooden decorations, professional painting and finishing, bedrooms, living rooms and luxury home solutions across Lebanon.",
+      "Everest Home is a furniture factory, showroom, and interior design studio in South Lebanon — custom furniture manufacturing, wood decor, professional painting and finishing, bedrooms, living rooms and luxury home solutions across Lebanon.",
+    slogan: "Furniture factory, showroom & interior design — all of Lebanon",
     keywords:
-      "Everest Home, furniture Lebanon, custom furniture Lebanon, interior design Lebanon, interior design Beirut, wood decor Lebanon, bedrooms, living rooms, luxury furniture Lebanon, furniture Beirut, custom carpentry Lebanon, furniture upholstery Lebanon, beech wood furniture, sofa fabrics, TV wall Lebanon, wardrobes Lebanon",
+      "Everest Home, Everest Home Lebanon, Everest furniture, furniture Lebanon, furniture factory Lebanon, furniture manufacturer Lebanon, furniture showroom Lebanon, furniture workshop Lebanon, furniture maker Lebanon, furniture store Lebanon, custom furniture Lebanon, custom furniture South Lebanon, custom furniture Beirut, bespoke furniture Lebanon, made-to-order furniture Lebanon, interior design Lebanon, interior design Beirut, interior design South Lebanon, interior designer Lebanon, 3D interior design, turnkey interior Lebanon, wood decor Lebanon, wooden decorations Lebanon, wood wall panels, bedrooms, custom bedrooms, kids bedrooms, bedroom sets Lebanon, living rooms, sofas Lebanon, custom sofas, sectional sofas, dining tables Lebanon, dining room Lebanon, buffet Lebanon, console tables, entrance tables, wardrobes Lebanon, walk-in closet Lebanon, dressing room, TV wall Lebanon, TV units Lebanon, media wall, home office furniture Lebanon, custom kitchens Lebanon, kitchen cabinets Lebanon, pergola Lebanon, outdoor furniture Lebanon, bathroom vanities Lebanon, wooden doors Lebanon, mashrabiya Lebanon, oriental woodwork Lebanon, restaurant decor Lebanon, cafe decor Lebanon, shop decor Lebanon, commercial decor Lebanon, office furniture Lebanon, bridal furniture Lebanon, bridal home furnishing Lebanon, upholstery Lebanon, sofa reupholstery Lebanon, furniture restoration Lebanon, furniture painting Lebanon, lacquer finish, PU painting, beech wood furniture, oak furniture Lebanon, MDF furniture, natural veneer, carpenter Lebanon, joinery Lebanon, furniture Tyre, furniture Nabatieh, furniture Sidon, furniture South Lebanon, furniture Beirut, furniture Mount Lebanon, furniture Jounieh, furniture Tripoli, furniture North Lebanon, furniture Zahle, furniture Bekaa, furniture Baalbek, furniture Akkar, modern furniture Lebanon, classic furniture Lebanon, neo-classic furniture Lebanon, luxury furniture Lebanon, high-end furniture Lebanon, furniture prices Lebanon, furniture quote Lebanon, free furniture consultation Lebanon, furniture delivery Lebanon, furniture installation Lebanon",
     ogTitle: "Everest Home – Furniture & Interior Design | Lebanon",
     ogDescription:
       "Custom-made furniture and interior design crafted to match your taste, with high-quality local manufacturing in South Lebanon.",
@@ -39,7 +40,7 @@ const dict = {
     label: "About Us",
     title: "About Us",
     paragraphs: [
-      "Everest Home is a company specialized in furniture manufacturing and interior decoration, combining experience, creativity, and high craftsmanship.",
+      "Everest Home is a furniture factory, showroom, and interior design studio based in South Lebanon, combining experience, creativity, and high craftsmanship.",
       "Through a team specialized in carpentry, upholstery, painting, and design, we deliver distinctive furniture pieces and complete projects from concept to execution.",
       "We believe every home has its own personality, which is why we provide custom solutions that reflect each client's style and life.",
     ],
@@ -135,7 +136,7 @@ const dict = {
       { title: "Wooden Decor", desc: "3D wooden walls and architectural details" },
       { title: "Complete Home Projects", desc: "Turnkey delivery from concept to final detail" },
     ],
-    note: "With every project we share before/after photos plus a short workshop video documenting the journey from idea to reality.",
+    note: "With every project we share before/after photos plus a short factory video documenting the journey from idea to reality.",
   },
   process: {
     label: "Our Process",
@@ -152,12 +153,12 @@ const dict = {
     label: "Gallery",
     title: "Photo & Video Gallery",
     description:
-      "Samples of our work including before/after photos and short videos from the workshop.",
+      "Samples of our work including before/after photos and short videos from the factory.",
     placeholders: [
       "Before / After: Bedroom",
       "Before / After: Salon",
       "Before / After: Wood Decor",
-      "Short Workshop Video",
+      "Short Factory Video",
       "Before / After: Full Home",
       "Build & Finish Video",
     ],
@@ -172,8 +173,8 @@ const dict = {
         a: "Yes, every piece is designed and manufactured to order: we take your space measurements and preferences, and present a clear design before production starts.",
       },
       {
-        q: "Where is your workshop and which areas do you serve?",
-        a: "Our workshop is based in South Lebanon, and we deliver projects all across Lebanon — from the South to Beirut, Mount Lebanon, the North, and the Bekaa.",
+        q: "Where is your factory and which areas do you serve?",
+        a: "Our factory and showroom are based in South Lebanon, and we deliver projects all across Lebanon — from the South to Beirut, Mount Lebanon, the North, and the Bekaa.",
       },
       {
         q: "How long does a full bedroom take to complete?",
@@ -193,7 +194,11 @@ const dict = {
       },
       {
         q: "What is the best custom furniture and interior design company in South Lebanon?",
-        a: "Everest Home is a South Lebanon-based workshop that combines carpentry, upholstery, painting, and interior design under one roof, with 500+ completed projects, 100% local manufacturing, and on-time delivery — which is why clients trust it for turnkey home projects.",
+        a: "Everest Home is a South Lebanon-based furniture factory and showroom that combines carpentry, upholstery, painting, and interior design under one roof, with 500+ completed projects, 100% local manufacturing, and on-time delivery — which is why clients trust it for turnkey home projects.",
+      },
+      {
+        q: "Is Everest Home a factory or a workshop?",
+        a: "Everest Home is more than a workshop: it is a complete furniture factory, a showroom, and an interior design studio in South Lebanon. The factory houses carpentry, upholstery, and painting departments; the showroom welcomes you to browse materials and models; and the design team prepares a 3D concept before execution — all under one roof.",
       },
       {
         q: "How much does custom furniture cost in Lebanon?",
@@ -201,7 +206,7 @@ const dict = {
       },
       {
         q: "Where can I see Everest Home's work and photos?",
-        a: "Follow us on Instagram @everestt.home where we post before/after photos of every project, short workshop videos, and our latest bedroom, salon, and wood decor designs.",
+        a: "Follow us on Instagram @everestt.home where we post before/after photos of every project, short factory videos, and our latest bedroom, salon, and wood decor designs.",
       },
       {
         q: "Is the first consultation free?",
@@ -253,7 +258,7 @@ const dict = {
       },
       {
         q: "Where is the nearest furniture workshop to me?",
-        a: "The Everest Home workshop is in South Lebanon, and we reach every Lebanese region: site visit at your location, manufacturing in our workshop, and installation at your home — WhatsApp 03 371 324.",
+        a: "The Everest Home factory and showroom are in South Lebanon, and we reach every Lebanese region: site visit at your location, manufacturing in our factory, and installation at your home — WhatsApp 03 371 324.",
       },
       {
         q: "Do you build complete kitchens?",

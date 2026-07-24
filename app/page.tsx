@@ -11,7 +11,7 @@ import WhyUs from "./components/WhyUs";
 import MaterialsGuide from "./components/MaterialsGuide";
 import Projects from "./components/Projects";
 import Process from "./components/Process";
-import Gallery from "./components/Gallery";
+// import Gallery from "./components/Gallery"; // TODO: رجّعو لما تجهز صور/فيديوهات المشاريع
 import Faq from "./components/Faq";
 import PseoLinks from "./components/PseoLinks";
 import CtaBand from "./components/CtaBand";
@@ -80,7 +80,7 @@ export default function HomePage() {
         <MaterialsGuide locale="ar" />
         <Projects dict={dict} />
         <Process dict={dict} />
-        <Gallery dict={dict} />
+        {/* <Gallery dict={dict} /> — مخفي مؤقتاً حتى تجهز صور وفيديوهات المشاريع */}
         <Faq dict={dict} locale="ar" />
         <PseoLinks locale="ar" />
         <CtaBand dict={dict} />

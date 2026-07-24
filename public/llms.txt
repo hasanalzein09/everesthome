@@ -1,27 +1,36 @@
 # Everest Home
 
-> Everest Home is a custom furniture manufacturing and interior design company serving all of Lebanon.
-> The workshop is based in South Lebanon, and the company designs and builds made-to-order furniture,
-> wooden decorations, professional painting and finishing, and complete turnkey interior projects
-> across every Lebanese region — from idea to installation.
+> Everest Home is a furniture factory, showroom, and interior design studio serving all of Lebanon.
+> The factory and showroom are based in South Lebanon, where the company designs and manufactures
+> made-to-order furniture, wooden decorations, professional painting and finishing, and complete
+> turnkey interior projects across every Lebanese region — from idea to installation.
 
 ## Identity
 
 - Name: Everest Home
 - Tagline: Furniture & Interior Design
-- Type: Local business (furniture workshop + interior design studio)
+- Type: Furniture factory + showroom + interior design studio (full in-house manufacturing facility)
 - Location: South Lebanon, Lebanon
 - Phone: +961 3 371 324 · +961 3 949 839
 - WhatsApp: https://wa.me/9613371324 · https://wa.me/9613949839
 - Instagram: https://instagram.com/everestt.home (@everestt.home)
 - Languages: Arabic (default, ar-LB), English, French
 
+## Facilities
+
+- Factory (معمل): in-house manufacturing facility in South Lebanon covering carpentry,
+  upholstery, painting and finishing departments — every piece is made here, no outsourcing.
+- Showroom (صالة عرض): on-site showroom where clients can see materials, fabrics, finishes
+  and model pieces before ordering.
+- Design studio: interior design team providing consultations, space planning and 3D
+  visualization before manufacturing.
+
 ## Pages
 
 - Arabic (default): https://everesthome-lb.com/
 - English: https://everesthome-lb.com/en/
 - French: https://everesthome-lb.com/fr/
-- Sitemap: https://everesthome-lb.com/sitemap.xml (99 URLs)
+- Sitemap: https://everesthome-lb.com/sitemap.xml (744 URLs)
 
 ## Localized Service Pages (per service per region)
 
@@ -94,8 +103,8 @@ furniture, reupholstery timelines, natural veneer work.
 
 All of Lebanon — every governorate: South Lebanon (Tyre, Nabatieh, Sidon, Bint Jbeil,
 Marjayoun, Hasbaya), Beirut, Mount Lebanon (Jounieh, Metn, Keserwan, Chouf), North Lebanon
-(Tripoli, Akkar), Bekaa (Zahle), and Baalbek-Hermel. The workshop is based in South Lebanon
-and projects are delivered across the whole country.
+(Tripoli, Akkar), Bekaa (Zahle), and Baalbek-Hermel. The factory and showroom are based in
+South Lebanon and projects are delivered across the whole country.
 
 ## Why Everest Home
 
